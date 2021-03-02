@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_5',['version',['../libversion_8cpp.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;libversion.cpp'],['../libversion_8h.html#ae64f17a84dc9c7144d1036498ff26fd9',1,'version():&#160;libversion.cpp']]]
+  ['getstaticblocksize_25',['getStaticBlockSize',['../classz80_1_1commandStateMachine.html#af9fb5b0244ecf8edf14ec302998db83c',1,'z80::commandStateMachine']]]
 ];

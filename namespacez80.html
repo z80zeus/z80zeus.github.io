@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>print_ip: z80 Namespace Reference</title>
+<title>bulk: z80 Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">print_ip
-   &#160;<span id="projectnumber">0.0.32</span>
+   <div id="projectname">bulk
+   &#160;<span id="projectnumber">0.0.48</span>
    </div>
-   <div id="projectbrief">print_ip</div>
+   <div id="projectbrief">bulk</div>
   </td>
  </tr>
  </tbody>
@@ -64,135 +64,69 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">z80 Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Файл содержит объявление класса, который выводит блок команд в файл.  
+<a href="namespacez80.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad3e6fee94ea2974d7a452b226b4c22e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad3e6fee94ea2974d7a452b226b4c22e4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_integral_v&lt; T &gt;, std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacez80.html#ad3e6fee94ea2974d7a452b226b4c22e4">ip2string</a> (T ip)</td></tr>
-<tr class="memdesc:ad3e6fee94ea2974d7a452b226b4c22e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование представления IP-адреса в виде целого числа - в строку.  <a href="namespacez80.html#ad3e6fee94ea2974d7a452b226b4c22e4">More...</a><br /></td></tr>
-<tr class="separator:ad3e6fee94ea2974d7a452b226b4c22e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c56bf2e0d512f040c43d4b360a24d3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a72c56bf2e0d512f040c43d4b360a24d3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_same_v&lt; T, std::string &gt;, std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacez80.html#a72c56bf2e0d512f040c43d4b360a24d3">ip2string</a> (const T &amp;ip)</td></tr>
-<tr class="memdesc:a72c56bf2e0d512f040c43d4b360a24d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вариант "преобразования" IP-адреса в строку из... строки. На самом деле никакого преобразованяи не производится. Функция возвращает строку, переданную параметром.  <a href="namespacez80.html#a72c56bf2e0d512f040c43d4b360a24d3">More...</a><br /></td></tr>
-<tr class="separator:a72c56bf2e0d512f040c43d4b360a24d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763cc1497e4ba37bbd7c245f396048ad"><td class="memTemplParams" colspan="2">template&lt;typename T , template&lt; typename &gt; class C&gt; </td></tr>
-<tr class="memitem:a763cc1497e4ba37bbd7c245f396048ad"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_same_v&lt; std::decay_t&lt; C&lt; T &gt; &gt;, std::vector&lt; T &gt; &gt;||std::is_same_v&lt; std::decay_t&lt; C&lt; T &gt; &gt;, std::list&lt; T &gt; &gt;, std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacez80.html#a763cc1497e4ba37bbd7c245f396048ad">ip2string</a> (const C&lt; T &gt; &amp;ip)</td></tr>
-<tr class="memdesc:a763cc1497e4ba37bbd7c245f396048ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование представления IP-адреса из содержимового контейнера (std::vector или std::list) - в строку.  <a href="namespacez80.html#a763cc1497e4ba37bbd7c245f396048ad">More...</a><br /></td></tr>
-<tr class="separator:a763cc1497e4ba37bbd7c245f396048ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandBlockFiler.html">commandBlockFiler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объекты данного класса используются для вывода блоков команд в файлы.  <a href="classz80_1_1commandBlockFiler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandBlockPrinter.html">commandBlockPrinter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объекты данного класса используются для вывода блоков команд в поток.  <a href="classz80_1_1commandBlockPrinter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html">commandStateMachine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Автомат, обрабатывающий строковые команды (в терминах задания).  <a href="classz80_1_1commandStateMachine.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html">commandStateMachineState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс является подтипом класса <a class="el" href="classz80_1_1state.html" title="Базовый класс состояний класса stateMachine (конечный автомат). Описывает интерфейс состояний конечно...">z80::state</a> - состояния абстрактного конечного автомата.  <a href="classz80_1_1commandStateMachineState.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateDynamicBlock.html">commandStateMachineStateDynamicBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс состояния автомата "Обработка динамического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>.  <a href="classz80_1_1commandStateMachineStateDynamicBlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateIdle.html">commandStateMachineStateIdle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс состояния автомата "Холостой ход" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>.  <a href="classz80_1_1commandStateMachineStateIdle.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html">commandStateMachineStateStaticBlock</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html">publisher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонный класс publisher. Обеспечивает функционал подписки-отписки-оповещения.  <a href="classz80_1_1publisher.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisherCommandsFromStream.html">publisherCommandsFromStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publisher строковых команд из строкового потока.  <a href="classz80_1_1publisherCommandsFromStream.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html">state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс состояний класса <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a> (конечный автомат). Описывает интерфейс состояний конечного автомата.  <a href="classz80_1_1state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html">stateMachine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс содержащий реализацию алгоритма работы конечного автомата.  <a href="classz80_1_1stateMachine.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html">subscriber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.  <a href="classz80_1_1subscriber.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a763cc1497e4ba37bbd7c245f396048ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a763cc1497e4ba37bbd7c245f396048ad">&#9670;&nbsp;</a></span>ip2string() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename &gt; class C&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt; std::is_same_v&lt;std::decay_t&lt;C&lt;T&gt; &gt;, std::vector&lt;T&gt; &gt; || std::is_same_v&lt;std::decay_t&lt;C&lt;T&gt; &gt;, std::list&lt;T&gt; &gt;, std::string &gt; z80::ip2string </td>
-          <td>(</td>
-          <td class="paramtype">const C&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>ip</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Преобразование представления IP-адреса из содержимового контейнера (std::vector или std::list) - в строку. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Тип - контейнер. </td></tr>
-    <tr><td class="paramname">C</td><td>Шаблонный параметр шаблона - контейнер. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ip</td><td>константная ссылка на объект типа C&lt;T&gt;. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Для C&lt;T&gt; типа std::vector или std::list - функция возвращает строку, составленную из содержимого контейнера, разделённого точками. В противном случае, данный вариант функции не скомпилируется. </dd></dl>
-
-</div>
-</div>
-<a id="a72c56bf2e0d512f040c43d4b360a24d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72c56bf2e0d512f040c43d4b360a24d3">&#9670;&nbsp;</a></span>ip2string() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;std::is_same_v&lt;T, std::string&gt;, std::string&gt; z80::ip2string </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>ip</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Вариант "преобразования" IP-адреса в строку из... строки. На самом деле никакого преобразованяи не производится. Функция возвращает строку, переданную параметром. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>std::string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ip</td><td>Константная ссылка на строку. Функция не анализирует содержимое переданной строки и возвращает её как есть. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Для T = std::string функция возвращает объект типа std::string. Для T других типов данный вариант функции не скомпилируется. </dd></dl>
-
-</div>
-</div>
-<a id="ad3e6fee94ea2974d7a452b226b4c22e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3e6fee94ea2974d7a452b226b4c22e4">&#9670;&nbsp;</a></span>ip2string() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt;std::is_integral_v&lt;T&gt;, std::string&gt; z80::ip2string </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>ip</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Преобразование представления IP-адреса в виде целого числа - в строку. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Целочисленный тип. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ip</td><td>Значение типа T, которое следует преобразовать в строку. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Для целочисленного T функция возвращает объект типа std::string. Для T других типов данный вариант функции не скомпилируется. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Файл содержит объявление класса, который выводит блок команд в файл. </p>
+<p>Файл содержит объявление шаблонного класса "Подписчик" (subscriber).</p>
+<p>Файл содержит объявление шаблонного класса "Конечный автомат" (<a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a>).</p>
+<p>Файл содержит объявление шаблонного класса "Состояние" (state).</p>
+<p>Файл содержит объявление класса "Publisher команд из потока строк".</p>
+<p>Файл содержит объявление шаблонного класса "Издатель" (publisher).</p>
+<p>Файл содержит объявление класса - состояния "Обработка статического блока команд" для конечного автомата.</p>
+<p>Файл содержит объявление класса - состояния "Холостой ход" для конечного автомата.</p>
+<p>Файл содержит объявление класса - состояния "Обработка динамического блока команд" для конечного автомата.</p>
+<p>Файл содержит объявление базового класса, для всех классов состояний конечного автомата обработки команд (в терминах задания).</p>
+<p>Файл содержит объявление конечного автомата, обрабатывающего строковые команды.</p>
+<p>Файл содержит объявление класса, который выводит блок команд в поток.</p>
+<dl class="section author"><dt>Author</dt><dd>Владимир Лазарев <a href="#" onclick="location.href='mai'+'lto:'+'sol'+'oc'+'k@m'+'ai'+'l.r'+'u'; return false;">soloc<span style="display: none;">.nosp@m.</span>k@ma<span style="display: none;">.nosp@m.</span>il.ru</a> </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

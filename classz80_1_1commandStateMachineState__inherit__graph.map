@@ -1,0 +1,7 @@
+<map id="z80::commandStateMachineState" name="z80::commandStateMachineState">
+<area shape="rect" id="node1" title="Класс является подтипом класса z80::state &#45; состояния абстрактного конечного автомата." alt="" coords="235,71,441,112"/>
+<area shape="rect" id="node3" href="$classz80_1_1commandStateMachineStateDynamicBlock.html" title="Класс состояния автомата &quot;Обработка динамического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="489,5,696,47"/>
+<area shape="rect" id="node4" href="$classz80_1_1commandStateMachineStateIdle.html" title="Класс состояния автомата &quot;Холостой ход&quot; предназначен для работы с автоматом, обрабатывающим строковые..." alt="" coords="489,71,696,112"/>
+<area shape="rect" id="node5" href="$classz80_1_1commandStateMachineStateStaticBlock.html" title="Класс состояния автомата &quot;Обработка статического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="489,136,696,177"/>
+<area shape="rect" id="node2" href="$classz80_1_1state.html" title=" " alt="" coords="5,78,187,105"/>
+</map>
