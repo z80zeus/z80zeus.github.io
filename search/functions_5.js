@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['publishercommandsfromstream_109',['publisherCommandsFromStream',['../classz80_1_1publisherCommandsFromStream.html#a943d1aa5e651df9818021958ccc98d24',1,'z80::publisherCommandsFromStream']]]
+  ['notify_145',['notify',['../classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4',1,'z80::publisher']]]
 ];

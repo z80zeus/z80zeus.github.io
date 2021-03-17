@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::state&lt; inputActionType &gt; Class Template Reference</title>
+<title>async: z80::state&lt; inputActionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Базовый класс состояний класса <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a> (конечный автомат). Описывает интерфейс состояний конечного автомата.  
+<p>Базовый класс состояний конечного автомата <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a>. Описывает основной интерфейс состояний.  
  <a href="classz80_1_1state.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="state_8h_source.html">state.h</a>&gt;</code></p>
@@ -85,37 +85,40 @@ Collaboration diagram for z80::state&lt; inputActionType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classz80_1_1state__coll__graph.png" border="0" usemap="#z80_1_1state_3_01inputActionType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="z80_1_1state_3_01inputActionType_01_4_coll__map" id="z80_1_1state_3_01inputActionType_01_4_coll__map">
-<area shape="rect" title="Базовый класс состояний класса stateMachine (конечный автомат). Описывает интерфейс состояний конечно..." alt="" coords="5,109,225,136"/>
+<area shape="rect" title="Базовый класс состояний конечного автомата stateMachine. Описывает основной интерфейс состояний." alt="" coords="5,109,225,136"/>
 <area shape="rect" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата." alt="" coords="39,5,191,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d8a68d9833e4dcd6241cfd55c5187ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">state</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>)</td></tr>
-<tr class="memdesc:a1d8a68d9833e4dcd6241cfd55c5187ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору состояния передаётся ссылка на автомат, в контексте которого он работает.  <a href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">More...</a><br /></td></tr>
-<tr class="separator:a1d8a68d9833e4dcd6241cfd55c5187ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86e499c4078f7a84aae423cd4fbbe6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">state</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>)</td></tr>
+<tr class="memdesc:ae86e499c4078f7a84aae423cd4fbbe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору состояния передаётся указатель на автомат, в контексте которого он работает.  <a href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">More...</a><br /></td></tr>
+<tr class="separator:ae86e499c4078f7a84aae423cd4fbbe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab133877192296f7042c919bab0cd5cf6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">~state</a> ()=default</td></tr>
-<tr class="memdesc:ab133877192296f7042c919bab0cd5cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса по-умолчанию.  <a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">More...</a><br /></td></tr>
+<tr class="memdesc:ab133877192296f7042c919bab0cd5cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полиморфному классу необходим деструктор. Для данного класса достаточно реализации по-умолчанию.  <a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">More...</a><br /></td></tr>
 <tr class="separator:ab133877192296f7042c919bab0cd5cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e21cc7582b4759d974600a3bf6fbc78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">inputAction</a> (const inputActionType &amp;iAction)=0</td></tr>
-<tr class="memdesc:a6e21cc7582b4759d974600a3bf6fbc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">В данную функцию своего текущего состояния автомат передаёт входное воздействие, принятое на свой вход.  <a href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">More...</a><br /></td></tr>
+<tr class="memdesc:a6e21cc7582b4759d974600a3bf6fbc78"><td class="mdescLeft">&#160;</td><td class="mdescRight">В данную функцию автомат передаёт входное воздействие, полученное на свой вход.  <a href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">More...</a><br /></td></tr>
 <tr class="separator:a6e21cc7582b4759d974600a3bf6fbc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c626731b9d4f842abb0a0add51f0be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">finish</a> ()=0</td></tr>
-<tr class="memdesc:a89c626731b9d4f842abb0a0add51f0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызовом данной функции автомат оповещает состояние о завершении своей работы.  <a href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">More...</a><br /></td></tr>
+<tr class="memdesc:a89c626731b9d4f842abb0a0add51f0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызовом данной функции автомат оповещает состояние о завершении своей работы. Состоянию следует завершить свой алгоритм.  <a href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">More...</a><br /></td></tr>
 <tr class="separator:a89c626731b9d4f842abb0a0add51f0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464f147c3c7ffabf09693b69e02ce06d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">setStateMachine</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *sMachine)</td></tr>
+<tr class="memdesc:a464f147c3c7ffabf09693b69e02ce06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указать состоянию указатель на новый автомат, в контексте которого теперь будет работать состояние.  <a href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">More...</a><br /></td></tr>
+<tr class="separator:a464f147c3c7ffabf09693b69e02ce06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a780f08a469a5e61e0f4ce0cc28aa0f95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">sm</a></td></tr>
-<tr class="memdesc:a780f08a469a5e61e0f4ce0cc28aa0f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на конечный автомат, с которым работает данное состояние.  <a href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">More...</a><br /></td></tr>
-<tr class="separator:a780f08a469a5e61e0f4ce0cc28aa0f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f076e11427bf5348e89f85ba15b87f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a> = nullptr</td></tr>
+<tr class="memdesc:a04f076e11427bf5348e89f85ba15b87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на конечный автомат, с которым работает данное состояние.  <a href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">More...</a><br /></td></tr>
+<tr class="separator:a04f076e11427bf5348e89f85ba15b87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename inputActionType&gt;<br />
 class z80::state&lt; inputActionType &gt;</h3>
 
-<p>Базовый класс состояний класса <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a> (конечный автомат). Описывает интерфейс состояний конечного автомата. </p>
+<p>Базовый класс состояний конечного автомата <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a>. Описывает основной интерфейс состояний. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">inputActionType</td><td>Тип данных, с которым работает конечный автомат. </td></tr>
@@ -123,8 +126,8 @@ class z80::state&lt; inputActionType &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1d8a68d9833e4dcd6241cfd55c5187ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d8a68d9833e4dcd6241cfd55c5187ff">&#9670;&nbsp;</a></span>state()</h2>
+<a id="ae86e499c4078f7a84aae423cd4fbbe6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86e499c4078f7a84aae423cd4fbbe6b">&#9670;&nbsp;</a></span>state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +140,7 @@ template&lt;typename inputActionType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classz80_1_1state.html">z80::state</a>&lt; inputActionType &gt;::<a class="el" href="classz80_1_1state.html">state</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *&#160;</td>
           <td class="paramname"><em>stateMachine</em></td><td>)</td>
           <td></td>
         </tr>
@@ -149,7 +152,7 @@ template&lt;typename inputActionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктору состояния передаётся ссылка на автомат, в контексте которого он работает. </p>
+<p>Конструктору состояния передаётся указатель на автомат, в контексте которого он работает. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a></td><td>Автомат, в контексте которого работает данное состояние. </td></tr>
@@ -184,7 +187,7 @@ template&lt;typename inputActionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Деструктор полиморфного класса по-умолчанию. </p>
+<p>Полиморфному классу необходим деструктор. Для данного класса достаточно реализации по-умолчанию. </p>
 
 </div>
 </div>
@@ -214,7 +217,7 @@ template&lt;typename inputActionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Вызовом данной функции автомат оповещает состояние о завершении своей работы. </p>
+<p>Вызовом данной функции автомат оповещает состояние о завершении своей работы. Состоянию следует завершить свой алгоритм. </p>
 
 <p>Implemented in <a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html#a01d4ec4ec6b1a586320146149041f544">z80::commandStateMachineStateStaticBlock</a>, and <a class="el" href="classz80_1_1commandStateMachineState.html#a2a98bf6172e933684acdf375b14744fb">z80::commandStateMachineState</a>.</p>
 
@@ -246,10 +249,10 @@ template&lt;typename inputActionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>В данную функцию своего текущего состояния автомат передаёт входное воздействие, принятое на свой вход. </p>
+<p>В данную функцию автомат передаёт входное воздействие, полученное на свой вход. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iAction</td><td>Входное воздействие, принятое автоматом. </td></tr>
+    <tr><td class="paramname">iAction</td><td>Входное воздействие, принятое автоматом, требуещее обработки алгоритмом состояния. </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,9 +261,8 @@ template&lt;typename inputActionType &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a780f08a469a5e61e0f4ce0cc28aa0f95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780f08a469a5e61e0f4ce0cc28aa0f95">&#9670;&nbsp;</a></span>sm</h2>
+<a id="a464f147c3c7ffabf09693b69e02ce06d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464f147c3c7ffabf09693b69e02ce06d">&#9670;&nbsp;</a></span>setStateMachine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +273,45 @@ template&lt;typename inputActionType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a>&amp; <a class="el" href="classz80_1_1state.html">z80::state</a>&lt; inputActionType &gt;::sm</td>
+          <td class="memname">virtual void <a class="el" href="classz80_1_1state.html">z80::state</a>&lt; inputActionType &gt;::setStateMachine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *&#160;</td>
+          <td class="paramname"><em>sMachine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Указать состоянию указатель на новый автомат, в контексте которого теперь будет работать состояние. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sMachine</td><td>Новый указатель на автомат - владельца состояния.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Эта функция вызывается при перемещении автомата, когда меняется его позиция в памяти и об этом требуется оповестить состояние. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a04f076e11427bf5348e89f85ba15b87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f076e11427bf5348e89f85ba15b87f">&#9670;&nbsp;</a></span>sm</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inputActionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a>* <a class="el" href="classz80_1_1state.html">z80::state</a>&lt; inputActionType &gt;::sm = nullptr</td>
         </tr>
       </table>
   </td>
@@ -281,7 +321,7 @@ template&lt;typename inputActionType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Ссылка на конечный автомат, с которым работает данное состояние. </p>
+<p>Указатель на конечный автомат, с которым работает данное состояние. </p>
 
 </div>
 </div>

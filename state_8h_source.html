@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/state.h Source File</title>
+<title>async: src/state.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -76,40 +76,43 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stateMachine_8h.html">stateMachine.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// std::string</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> inputActionType&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classz80_1_1stateMachine.html">   15</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> inputActionType&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classz80_1_1state.html">   23</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1state.html">state</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">using</span> <a class="code" href="classz80_1_1stateMachine.html">StateMachine</a> = <a class="code" href="classz80_1_1stateMachine.html">z80::stateMachine&lt;inputActionType&gt;</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">   31</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">state</a>(<a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>&amp; <a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>) : <a class="code" href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">sm</a>(<a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>) {};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">~state</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">inputAction</a>(<span class="keyword">const</span> inputActionType&amp; iAction) = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">finish</a>() = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">   53</a></span>&#160;    <a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>&amp; <a class="code" href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">sm</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> inputActionType&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classz80_1_1stateMachine.html">   13</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> inputActionType&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classz80_1_1state.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1state.html">state</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">using</span> <a class="code" href="classz80_1_1stateMachine.html">StateMachine</a> = <a class="code" href="classz80_1_1stateMachine.html">z80::stateMachine&lt;inputActionType&gt;</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">   28</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">state</a>(<a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>* <a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>) : <a class="code" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a>{<a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>} {};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">~state</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">inputAction</a>(<span class="keyword">const</span> inputActionType&amp; iAction) = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">finish</a>() = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">setStateMachine</a>(<a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>* sMachine) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a> = sMachine;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">   61</a></span>&#160;    <a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>* <a class="code" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astateMachine_8h_html"><div class="ttname"><a href="stateMachine_8h.html">stateMachine.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1state_html_a1d8a68d9833e4dcd6241cfd55c5187ff"><div class="ttname"><a href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">z80::state::state</a></div><div class="ttdeci">state(StateMachine &amp;stateMachine)</div><div class="ttdoc">Конструктору состояния передаётся ссылка на автомат, в контексте которого он работает.</div><div class="ttdef"><b>Definition:</b> state.h:31</div></div>
 <div class="ttc" id="anamespacez80_html"><div class="ttname"><a href="namespacez80.html">z80</a></div><div class="ttdoc">Файл содержит объявление класса, который выводит блок команд в файл.</div><div class="ttdef"><b>Definition:</b> commandBlockFiler.h:11</div></div>
-<div class="ttc" id="aclassz80_1_1state_html"><div class="ttname"><a href="classz80_1_1state.html">z80::state</a></div><div class="ttdoc">Базовый класс состояний класса stateMachine (конечный автомат). Описывает интерфейс состояний конечно...</div><div class="ttdef"><b>Definition:</b> state.h:23</div></div>
-<div class="ttc" id="aclassz80_1_1state_html_a89c626731b9d4f842abb0a0add51f0be"><div class="ttname"><a href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">z80::state::finish</a></div><div class="ttdeci">virtual void finish()=0</div><div class="ttdoc">Вызовом данной функции автомат оповещает состояние о завершении своей работы.</div></div>
-<div class="ttc" id="aclassz80_1_1state_html_ab133877192296f7042c919bab0cd5cf6"><div class="ttname"><a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">z80::state::~state</a></div><div class="ttdeci">virtual ~state()=default</div><div class="ttdoc">Деструктор полиморфного класса по-умолчанию.</div></div>
-<div class="ttc" id="aclassz80_1_1state_html_a780f08a469a5e61e0f4ce0cc28aa0f95"><div class="ttname"><a href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">z80::state::sm</a></div><div class="ttdeci">StateMachine &amp; sm</div><div class="ttdoc">Ссылка на конечный автомат, с которым работает данное состояние.</div><div class="ttdef"><b>Definition:</b> state.h:53</div></div>
-<div class="ttc" id="aclassz80_1_1stateMachine_html"><div class="ttname"><a href="classz80_1_1stateMachine.html">z80::stateMachine</a></div><div class="ttdoc">Базовый класс содержащий реализацию алгоритма работы конечного автомата.</div><div class="ttdef"><b>Definition:</b> state.h:15</div></div>
-<div class="ttc" id="aclassz80_1_1state_html_a6e21cc7582b4759d974600a3bf6fbc78"><div class="ttname"><a href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">z80::state::inputAction</a></div><div class="ttdeci">virtual void inputAction(const inputActionType &amp;iAction)=0</div><div class="ttdoc">В данную функцию своего текущего состояния автомат передаёт входное воздействие, принятое на свой вхо...</div></div>
+<div class="ttc" id="aclassz80_1_1state_html"><div class="ttname"><a href="classz80_1_1state.html">z80::state</a></div><div class="ttdoc">Базовый класс состояний конечного автомата stateMachine. Описывает основной интерфейс состояний.</div><div class="ttdef"><b>Definition:</b> state.h:20</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_a89c626731b9d4f842abb0a0add51f0be"><div class="ttname"><a href="classz80_1_1state.html#a89c626731b9d4f842abb0a0add51f0be">z80::state::finish</a></div><div class="ttdeci">virtual void finish()=0</div><div class="ttdoc">Вызовом данной функции автомат оповещает состояние о завершении своей работы. Состоянию следует завер...</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_a04f076e11427bf5348e89f85ba15b87f"><div class="ttname"><a href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">z80::state::sm</a></div><div class="ttdeci">StateMachine * sm</div><div class="ttdoc">Указатель на конечный автомат, с которым работает данное состояние.</div><div class="ttdef"><b>Definition:</b> state.h:61</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_ab133877192296f7042c919bab0cd5cf6"><div class="ttname"><a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">z80::state::~state</a></div><div class="ttdeci">virtual ~state()=default</div><div class="ttdoc">Полиморфному классу необходим деструктор. Для данного класса достаточно реализации по-умолчанию.</div></div>
+<div class="ttc" id="aclassz80_1_1stateMachine_html"><div class="ttname"><a href="classz80_1_1stateMachine.html">z80::stateMachine</a></div><div class="ttdoc">Базовый класс содержащий реализацию алгоритма работы конечного автомата.</div><div class="ttdef"><b>Definition:</b> state.h:13</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_ae86e499c4078f7a84aae423cd4fbbe6b"><div class="ttname"><a href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">z80::state::state</a></div><div class="ttdeci">state(StateMachine *stateMachine)</div><div class="ttdoc">Конструктору состояния передаётся указатель на автомат, в контексте которого он работает.</div><div class="ttdef"><b>Definition:</b> state.h:28</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_a464f147c3c7ffabf09693b69e02ce06d"><div class="ttname"><a href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">z80::state::setStateMachine</a></div><div class="ttdeci">virtual void setStateMachine(StateMachine *sMachine)</div><div class="ttdoc">Указать состоянию указатель на новый автомат, в контексте которого теперь будет работать состояние.</div><div class="ttdef"><b>Definition:</b> state.h:53</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_a6e21cc7582b4759d974600a3bf6fbc78"><div class="ttname"><a href="classz80_1_1state.html#a6e21cc7582b4759d974600a3bf6fbc78">z80::state::inputAction</a></div><div class="ttdeci">virtual void inputAction(const inputActionType &amp;iAction)=0</div><div class="ttdoc">В данную функцию автомат передаёт входное воздействие, полученное на свой вход.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

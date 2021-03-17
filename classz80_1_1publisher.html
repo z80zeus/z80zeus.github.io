@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::publisher&lt; T &gt; Class Template Reference</title>
+<title>async: z80::publisher&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -82,8 +82,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7cc5712738a14881def91fd4c5eb3fba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">publisher</a> ()=default</td></tr>
+<tr class="memdesc:a7cc5712738a14881def91fd4c5eb3fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору по-умолчанию достаточно реализации по-умолчанию.  <a href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">More...</a><br /></td></tr>
+<tr class="separator:a7cc5712738a14881def91fd4c5eb3fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fbcdf2fde848ab9f281d6cafbb05a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">publisher</a> (<a class="el" href="classz80_1_1publisher.html">z80::publisher</a>&lt; T &gt; &amp;&amp;p) noexcept</td></tr>
+<tr class="memdesc:aa0fbcdf2fde848ab9f281d6cafbb05a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор забирает себе во владение всех подписчиков объекта-источника.  <a href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">More...</a><br /></td></tr>
+<tr class="separator:aa0fbcdf2fde848ab9f281d6cafbb05a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e704591bdc68efe9a506c0ca017e857"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a> ()=default</td></tr>
-<tr class="memdesc:a2e704591bdc68efe9a506c0ca017e857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса имеет реализацию по-умолчанию.  <a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">More...</a><br /></td></tr>
+<tr class="memdesc:a2e704591bdc68efe9a506c0ca017e857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.  <a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">More...</a><br /></td></tr>
 <tr class="separator:a2e704591bdc68efe9a506c0ca017e857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b23cbded2f6e3a61c6d39a5ebef411"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a> (<a class="el" href="classz80_1_1subscriber.html">Subscriber</a> &amp;<a class="el" href="classz80_1_1subscriber.html">subscriber</a>)</td></tr>
 <tr class="memdesc:ad5b23cbded2f6e3a61c6d39a5ebef411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция подписки Подписчика (Subscriber) на рассылку значения типа T.  <a href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">More...</a><br /></td></tr>
@@ -108,6 +114,71 @@ class z80::publisher&lt; T &gt;</h3>
 </dl>
 <p>Работает с подписчиками типа z80::subscriber&lt;T&gt;, рассылая им уведомления путём вызова метода <a class="el" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a" title="Оповещение подписчика о значении.">z80::subscriber&lt;T&gt;::update()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7cc5712738a14881def91fd4c5eb3fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc5712738a14881def91fd4c5eb3fba">&#9670;&nbsp;</a></span>publisher() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classz80_1_1publisher.html">z80::publisher</a>&lt; T &gt;::<a class="el" href="classz80_1_1publisher.html">publisher</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктору по-умолчанию достаточно реализации по-умолчанию. </p>
+
+</div>
+</div>
+<a id="aa0fbcdf2fde848ab9f281d6cafbb05a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fbcdf2fde848ab9f281d6cafbb05a7">&#9670;&nbsp;</a></span>publisher() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classz80_1_1publisher.html">z80::publisher</a>&lt; T &gt;::<a class="el" href="classz80_1_1publisher.html">publisher</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classz80_1_1publisher.html">z80::publisher</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перемещающий конструктор забирает себе во владение всех подписчиков объекта-источника. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Объект-источник, на основе которого конструируется новый объект. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2e704591bdc68efe9a506c0ca017e857"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e704591bdc68efe9a506c0ca017e857">&#9670;&nbsp;</a></span>~publisher()</h2>
 
@@ -133,7 +204,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Деструктор полиморфного класса имеет реализацию по-умолчанию. </p>
+<p>Деструктор полиморфного класса. Достаточно реализации по-умолчанию. </p>
 
 </div>
 </div>
@@ -237,7 +308,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Функция отписки всех подписчиков. Функция индивидуальной отписки в данном проекте не требуется. </p>
-<p>У каждого подписчика вызывает метод unsubscribed(), оповещая его об окончании действия подписки. </p>
+<p>У каждого подписчика вызывает метод unsubscribed(), оповещая его об окончании действия подписки и очищает контейнер подписчиков. </p>
 
 </div>
 </div>

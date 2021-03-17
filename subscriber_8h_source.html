@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/subscriber.h Source File</title>
+<title>async: src/subscriber.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -75,22 +75,25 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classz80_1_1subscriber.html">   15</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1subscriber.html">subscriber</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">update</a>(<span class="keyword">const</span> T&amp; data) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a>() {};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classz80_1_1subscriber.html">   17</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1subscriber.html">subscriber</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">   24</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> [[maybe_unused]] = T;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">update</a>(<span class="keyword">const</span> T&amp; data) = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a>() {};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassz80_1_1subscriber_html_ae367506ca1abefaef9619e4c8459d070"><div class="ttname"><a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">z80::subscriber::unsubscribed</a></div><div class="ttdeci">virtual void unsubscribed()</div><div class="ttdoc">Оповещение подписчика об отписке от издателя.</div><div class="ttdef"><b>Definition:</b> subscriber.h:31</div></div>
-<div class="ttc" id="aclassz80_1_1subscriber_html_a5dd7aef485d4e04e65dd6e2b490b7df6"><div class="ttname"><a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">z80::subscriber::~subscriber</a></div><div class="ttdeci">virtual ~subscriber()=default</div><div class="ttdoc">Деструктор полиморфного класса имеет реализацию по-умолчанию.</div></div>
-<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:15</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html_ae367506ca1abefaef9619e4c8459d070"><div class="ttname"><a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">z80::subscriber::unsubscribed</a></div><div class="ttdeci">virtual void unsubscribed()</div><div class="ttdoc">Оповещение подписчика об отписке от издателя.</div><div class="ttdef"><b>Definition:</b> subscriber.h:42</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html_a5dd7aef485d4e04e65dd6e2b490b7df6"><div class="ttname"><a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">z80::subscriber::~subscriber</a></div><div class="ttdeci">virtual ~subscriber()=default</div><div class="ttdoc">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:17</div></div>
 <div class="ttc" id="anamespacez80_html"><div class="ttname"><a href="namespacez80.html">z80</a></div><div class="ttdoc">Файл содержит объявление класса, который выводит блок команд в файл.</div><div class="ttdef"><b>Definition:</b> commandBlockFiler.h:11</div></div>
 <div class="ttc" id="aclassz80_1_1subscriber_html_a04e7fce7e30e075bbd00ccbd6b4aff7a"><div class="ttname"><a href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">z80::subscriber::update</a></div><div class="ttdeci">virtual void update(const T &amp;data)=0</div><div class="ttdoc">Оповещение подписчика о значении.</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html_ae5c53beb5969c571b2314b51f222c0e6"><div class="ttname"><a href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">z80::subscriber&lt; typename Subscriber::MessageType &gt;::MessageType</a></div><div class="ttdeci">typename Subscriber::MessageType MessageType</div><div class="ttdoc">Псевдоним типа, с которым работает шаблон.</div><div class="ttdef"><b>Definition:</b> subscriber.h:24</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

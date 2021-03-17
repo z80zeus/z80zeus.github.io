@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/state.h File Reference</title>
+<title>async: src/state.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="stateMachine_8h_source.html">stateMachine.h</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for state.h:</div>
 <div class="dyncontent">
@@ -83,7 +82,6 @@ Include dependency graph for state.h:</div>
 <map name="src_2state_8h" id="src_2state_8h">
 <area shape="rect" title=" " alt="" coords="45,5,136,32"/>
 <area shape="rect" href="stateMachine_8h.html" title=" " alt="" coords="29,80,152,107"/>
-<area shape="rect" title=" " alt="" coords="176,80,235,107"/>
 <area shape="rect" title=" " alt="" coords="5,155,83,181"/>
 <area shape="rect" title=" " alt="" coords="107,155,167,181"/>
 </map>
@@ -93,18 +91,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="state_8h__dep__incl.png" border="0" usemap="#src_2state_8hdep" alt=""/></div>
 <map name="src_2state_8hdep" id="src_2state_8hdep">
-<area shape="rect" title=" " alt="" coords="523,5,614,32"/>
-<area shape="rect" href="stateMachine_8h.html" title=" " alt="" coords="441,80,587,107"/>
-<area shape="rect" href="commandStateMachineState_8h.html" title=" " alt="" coords="391,229,637,256"/>
-<area shape="rect" href="commandStateMachineStateIdle_8h.html" title=" " alt="" coords="876,304,1109,345"/>
-<area shape="rect" href="commandStateMachineStateDynamicBlock_8h.html" title=" " alt="" coords="619,304,852,345"/>
-<area shape="rect" href="commandStateMachineStateStaticBlock_8h.html" title=" " alt="" coords="27,304,260,345"/>
-<area shape="rect" href="commandStateMachine_8h.html" title=" " alt="" coords="245,155,455,181"/>
-<area shape="rect" href="commandStateMachine_8cpp.html" title=" " alt="" coords="957,401,1183,427"/>
-<area shape="rect" href="commandStateMachineStateDynamicBlock_8cpp.html" title=" " alt="" coords="659,393,892,435"/>
-<area shape="rect" href="commandStateMachineStateStaticBlock_8cpp.html" title=" " alt="" coords="105,393,339,435"/>
-<area shape="rect" href="commandStateMachineState_8cpp.html" title=" " alt="" coords="335,311,595,338"/>
-<area shape="rect" href="commandStateMachineStateIdle_8cpp.html" title=" " alt="" coords="401,393,635,435"/>
+<area shape="rect" title=" " alt="" coords="301,5,392,32"/>
+<area shape="rect" href="stateMachine_8h.html" title=" " alt="" coords="459,80,604,107"/>
+<area shape="rect" href="commandStateMachine_8cpp.html" title=" " alt="" coords="48,401,274,427"/>
+<area shape="rect" href="commandStateMachineState_8h.html" title=" " alt="" coords="409,229,654,256"/>
+<area shape="rect" href="commandStateMachineStateIdle_8h.html" title=" " alt="" coords="44,304,278,345"/>
+<area shape="rect" href="commandStateMachineStateDynamicBlock_8h.html" title=" " alt="" coords="895,304,1128,345"/>
+<area shape="rect" href="commandStateMachineStateStaticBlock_8h.html" title=" " alt="" coords="586,304,819,345"/>
+<area shape="rect" href="commandStateMachine_8h.html" title=" " alt="" coords="734,155,945,181"/>
+<area shape="rect" href="commandStateMachineStateDynamicBlock_8cpp.html" title=" " alt="" coords="998,393,1231,435"/>
+<area shape="rect" href="commandStateMachineStateStaticBlock_8cpp.html" title=" " alt="" coords="740,393,974,435"/>
+<area shape="rect" href="libInterface_8cpp.html" title=" " alt="" coords="881,229,1028,256"/>
+<area shape="rect" href="commandStateMachineState_8cpp.html" title=" " alt="" coords="302,311,562,338"/>
+<area shape="rect" href="commandStateMachineStateIdle_8cpp.html" title=" " alt="" coords="483,393,716,435"/>
 </map>
 </div>
 </div>
@@ -116,7 +115,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс содержащий реализацию алгоритма работы конечного автомата.  <a href="classz80_1_1stateMachine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html">z80::state&lt; inputActionType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс состояний класса <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a> (конечный автомат). Описывает интерфейс состояний конечного автомата.  <a href="classz80_1_1state.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс состояний конечного автомата <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a>. Описывает основной интерфейс состояний.  <a href="classz80_1_1state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

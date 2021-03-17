@@ -1,5 +1,5 @@
 <map id="z80::commandStateMachineStateStaticBlock" name="z80::commandStateMachineStateStaticBlock">
 <area shape="rect" id="node1" title="Класс состояния автомата &quot;Обработка статического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="5,169,212,211"/>
-<area shape="rect" id="node2" href="$classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state &#45; состояния абстрактного конечного автомата." alt="" coords="5,80,212,121"/>
+<area shape="rect" id="node2" href="$classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; &#45; промежуточный класс, базовый для всех возможных состояний авт..." alt="" coords="5,80,212,121"/>
 <area shape="rect" id="node3" href="$classz80_1_1state.html" title=" " alt="" coords="18,5,199,32"/>
 </map>

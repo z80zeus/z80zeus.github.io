@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/commandStateMachineStateIdle.h Source File</title>
+<title>async: src/commandStateMachineStateIdle.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -78,34 +78,32 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">state.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stateMachine_8h.html">stateMachine.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// std::shared_ptr</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// std::string</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// std::string</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classz80_1_1commandStateMachineStateIdle.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1commandStateMachineStateIdle.html">commandStateMachineStateIdle</a> : <span class="keyword">public</span> <a class="code" href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">using</span> <a class="code" href="classz80_1_1stateMachine.html">StateMachine</a> = <a class="code" href="classz80_1_1stateMachine.html">z80::stateMachine&lt;std::string&gt;</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classz80_1_1commandStateMachineStateIdle.html#a0a0df18900de1b132464459603b2e136">commandStateMachineStateIdle</a>(<a class="code" href="classz80_1_1stateMachine.html">StateMachine</a>&amp; <a class="code" href="classz80_1_1stateMachine.html">stateMachine</a>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classz80_1_1commandStateMachineStateIdle.html#a7595b4995afe8f6652f12710a6f71ead">inputAction</a>(<span class="keyword">const</span> std::string&amp; iAction) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> switchStateMachineToStaticBlock(<span class="keyword">const</span> std::string&amp; iAction) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> switchStateMachineToDynamicBlock() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classz80_1_1commandStateMachineStateIdle.html#aec617c22e42202605fdb2608ee220b23">commandStateMachineStateIdle</a>(<a class="code" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a>* <a class="code" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classz80_1_1commandStateMachineStateIdle.html#a7595b4995afe8f6652f12710a6f71ead">inputAction</a>(<span class="keyword">const</span> std::string&amp; iAction) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> switchStateMachineToStaticBlock(<span class="keyword">const</span> std::string&amp; iAction) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> switchStateMachineToDynamicBlock() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="acommandStateMachineState_8h_html"><div class="ttname"><a href="commandStateMachineState_8h.html">commandStateMachineState.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1commandStateMachineStateIdle_html_a0a0df18900de1b132464459603b2e136"><div class="ttname"><a href="classz80_1_1commandStateMachineStateIdle.html#a0a0df18900de1b132464459603b2e136">z80::commandStateMachineStateIdle::commandStateMachineStateIdle</a></div><div class="ttdeci">commandStateMachineStateIdle(StateMachine &amp;stateMachine)</div><div class="ttdoc">Конструкту состояния передаётся ссылка на автомат, в контексте которого это состояние работают.</div><div class="ttdef"><b>Definition:</b> commandStateMachineStateIdle.cpp:10</div></div>
 <div class="ttc" id="astateMachine_8h_html"><div class="ttname"><a href="stateMachine_8h.html">stateMachine.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1commandStateMachineState_html"><div class="ttname"><a href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></div><div class="ttdoc">Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.</div><div class="ttdef"><b>Definition:</b> commandStateMachineState.h:23</div></div>
+<div class="ttc" id="aclassz80_1_1commandStateMachineState_html"><div class="ttname"><a href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></div><div class="ttdoc">Класс &quot;Состояние строкового автомата&quot; - промежуточный класс, базовый для всех возможных состояний авт...</div><div class="ttdef"><b>Definition:</b> commandStateMachineState.h:25</div></div>
 <div class="ttc" id="anamespacez80_html"><div class="ttname"><a href="namespacez80.html">z80</a></div><div class="ttdoc">Файл содержит объявление класса, который выводит блок команд в файл.</div><div class="ttdef"><b>Definition:</b> commandBlockFiler.h:11</div></div>
-<div class="ttc" id="aclassz80_1_1stateMachine_html"><div class="ttname"><a href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></div></div>
+<div class="ttc" id="aclassz80_1_1commandStateMachine_html"><div class="ttname"><a href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></div><div class="ttdoc">Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).</div><div class="ttdef"><b>Definition:</b> commandStateMachine.h:25</div></div>
+<div class="ttc" id="aclassz80_1_1state_html_a04f076e11427bf5348e89f85ba15b87f"><div class="ttname"><a href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">z80::state&lt; std::string &gt;::sm</a></div><div class="ttdeci">StateMachine * sm</div><div class="ttdoc">Указатель на конечный автомат, с которым работает данное состояние.</div><div class="ttdef"><b>Definition:</b> state.h:61</div></div>
+<div class="ttc" id="aclassz80_1_1commandStateMachineStateIdle_html_aec617c22e42202605fdb2608ee220b23"><div class="ttname"><a href="classz80_1_1commandStateMachineStateIdle.html#aec617c22e42202605fdb2608ee220b23">z80::commandStateMachineStateIdle::commandStateMachineStateIdle</a></div><div class="ttdeci">commandStateMachineStateIdle(z80::commandStateMachine *sm)</div><div class="ttdoc">Конструктору состояния передаётся указатель на автомат, в контексте которого это состояние работает.</div><div class="ttdef"><b>Definition:</b> commandStateMachineStateIdle.cpp:11</div></div>
 <div class="ttc" id="aclassz80_1_1commandStateMachineStateIdle_html"><div class="ttname"><a href="classz80_1_1commandStateMachineStateIdle.html">z80::commandStateMachineStateIdle</a></div><div class="ttdoc">Класс состояния автомата &quot;Холостой ход&quot; предназначен для работы с автоматом, обрабатывающим строковые...</div><div class="ttdef"><b>Definition:</b> commandStateMachineStateIdle.h:20</div></div>
 <div class="ttc" id="astate_8h_html"><div class="ttname"><a href="state_8h.html">state.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1commandStateMachineStateIdle_html_a7595b4995afe8f6652f12710a6f71ead"><div class="ttname"><a href="classz80_1_1commandStateMachineStateIdle.html#a7595b4995afe8f6652f12710a6f71ead">z80::commandStateMachineStateIdle::inputAction</a></div><div class="ttdeci">void inputAction(const std::string &amp;iAction) override</div><div class="ttdoc">Входное воздействие на автомат.</div><div class="ttdef"><b>Definition:</b> commandStateMachineStateIdle.cpp:15</div></div>
+<div class="ttc" id="aclassz80_1_1commandStateMachineStateIdle_html_a7595b4995afe8f6652f12710a6f71ead"><div class="ttname"><a href="classz80_1_1commandStateMachineStateIdle.html#a7595b4995afe8f6652f12710a6f71ead">z80::commandStateMachineStateIdle::inputAction</a></div><div class="ttdeci">void inputAction(const std::string &amp;iAction) override</div><div class="ttdoc">Входное воздействие на автомат.</div><div class="ttdef"><b>Definition:</b> commandStateMachineStateIdle.cpp:16</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

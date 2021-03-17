@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::commandBlockFiler Class Reference</title>
+<title>async: z80::commandBlockFiler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -105,15 +105,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae124464a80c8b55547dee3433b6542e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classz80_1_1subscriber"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1subscriber')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td></tr>
 <tr class="memitem:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a> ()=default</td></tr>
-<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса имеет реализацию по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
+<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
 <tr class="separator:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a> ()</td></tr>
 <tr class="memdesc:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оповещение подписчика об отписке от издателя.  <a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">More...</a><br /></td></tr>
 <tr class="separator:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classz80_1_1subscriber"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classz80_1_1subscriber')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td></tr>
+<tr class="memitem:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> = std::string</td></tr>
+<tr class="memdesc:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Псевдоним типа, с которым работает шаблон.  <a href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">More...</a><br /></td></tr>
+<tr class="separator:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Объекты данного класса используются для вывода блоков команд в файлы. </p>
-<p>Блоки команд поступают через механизм publisher/subsrciber, для чего данный класс наследуется от шаблонного класса <a class="el" href="classz80_1_1subscriber.html" title="Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.">z80::subscriber</a> с шаблонным параметром std::string (команды и блоки команд представляют собой строки). Для получения блоков команд класс переопределяет функцию update. </p>
+<p>Блоки команд поступают через механизм publisher/subsrciber, для чего данный класс наследуется от шаблонного класса <a class="el" href="classz80_1_1subscriber.html" title="Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.">z80::subscriber</a> с шаблонным параметром std::string (команды и блоки команд представляют собой строки). Для получения блоков команд класс переопределяет функцию update. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae124464a80c8b55547dee3433b6542e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae124464a80c8b55547dee3433b6542e3">&#9670;&nbsp;</a></span>update()</h2>

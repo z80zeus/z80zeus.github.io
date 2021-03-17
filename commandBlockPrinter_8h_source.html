@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/commandBlockPrinter.h Source File</title>
+<title>async: src/commandBlockPrinter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -76,27 +76,28 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="subscriber_8h.html">subscriber.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span>  <span class="comment">// std::ostream</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span>   <span class="comment">// std::string</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classz80_1_1commandBlockPrinter.html">   19</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1commandBlockPrinter.html">commandBlockPrinter</a> : <span class="keyword">public</span> <a class="code" href="classz80_1_1subscriber.html">z80::subscriber</a>&lt;std::string&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classz80_1_1commandBlockPrinter.html#ad3708d996ad93e769609287f8a08b41f">commandBlockPrinter</a>(std::ostream&amp; outputStream);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classz80_1_1commandBlockPrinter.html#ad10ed90d816163cd3fae4e50ec0263c8">update</a>(<span class="keyword">const</span> std::string&amp; commandBlock) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::ostream&amp; os;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// std::cout</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span>  <span class="comment">// std::ostream</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span>   <span class="comment">// std::string</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacez80.html">z80</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classz80_1_1commandBlockPrinter.html">   20</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classz80_1_1commandBlockPrinter.html">commandBlockPrinter</a> : <span class="keyword">public</span> <a class="code" href="classz80_1_1subscriber.html">z80::subscriber</a>&lt;std::string&gt; {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classz80_1_1commandBlockPrinter.html#a6ff3838ad13ddd7194e5bb12661d1412">commandBlockPrinter</a>(std::ostream&amp; outputStream = std::cout);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classz80_1_1commandBlockPrinter.html#ad10ed90d816163cd3fae4e50ec0263c8">update</a>(<span class="keyword">const</span> std::string&amp; commandBlock) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::ostream&amp; os;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassz80_1_1commandBlockPrinter_html"><div class="ttname"><a href="classz80_1_1commandBlockPrinter.html">z80::commandBlockPrinter</a></div><div class="ttdoc">Объекты данного класса используются для вывода блоков команд в поток.</div><div class="ttdef"><b>Definition:</b> commandBlockPrinter.h:19</div></div>
+<div class="ttc" id="aclassz80_1_1commandBlockPrinter_html"><div class="ttname"><a href="classz80_1_1commandBlockPrinter.html">z80::commandBlockPrinter</a></div><div class="ttdoc">Объекты данного класса используются для вывода блоков команд в поток.</div><div class="ttdef"><b>Definition:</b> commandBlockPrinter.h:20</div></div>
 <div class="ttc" id="asubscriber_8h_html"><div class="ttname"><a href="subscriber_8h.html">subscriber.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:15</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:17</div></div>
 <div class="ttc" id="anamespacez80_html"><div class="ttname"><a href="namespacez80.html">z80</a></div><div class="ttdoc">Файл содержит объявление класса, который выводит блок команд в файл.</div><div class="ttdef"><b>Definition:</b> commandBlockFiler.h:11</div></div>
+<div class="ttc" id="aclassz80_1_1commandBlockPrinter_html_a6ff3838ad13ddd7194e5bb12661d1412"><div class="ttname"><a href="classz80_1_1commandBlockPrinter.html#a6ff3838ad13ddd7194e5bb12661d1412">z80::commandBlockPrinter::commandBlockPrinter</a></div><div class="ttdeci">commandBlockPrinter(std::ostream &amp;outputStream=std::cout)</div><div class="ttdoc">Конструктор параметризируется ссылкой на объект потокового вывода, куда будет направлять свой вывод с...</div><div class="ttdef"><b>Definition:</b> commandBlockPrinter.cpp:8</div></div>
 <div class="ttc" id="aclassz80_1_1commandBlockPrinter_html_ad10ed90d816163cd3fae4e50ec0263c8"><div class="ttname"><a href="classz80_1_1commandBlockPrinter.html#ad10ed90d816163cd3fae4e50ec0263c8">z80::commandBlockPrinter::update</a></div><div class="ttdeci">void update(const std::string &amp;commandBlock) override</div><div class="ttdoc">Функция выводит блок команд в поток, указанный в конструкторе.</div><div class="ttdef"><b>Definition:</b> commandBlockPrinter.cpp:11</div></div>
-<div class="ttc" id="aclassz80_1_1commandBlockPrinter_html_ad3708d996ad93e769609287f8a08b41f"><div class="ttname"><a href="classz80_1_1commandBlockPrinter.html#ad3708d996ad93e769609287f8a08b41f">z80::commandBlockPrinter::commandBlockPrinter</a></div><div class="ttdeci">commandBlockPrinter(std::ostream &amp;outputStream)</div><div class="ttdoc">Конструктор параметризируется ссылкой на объект потокового вывода, куда будет направлять свой вывод с...</div><div class="ttdef"><b>Definition:</b> commandBlockPrinter.cpp:8</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

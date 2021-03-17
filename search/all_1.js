@@ -1,26 +1,4 @@
 var searchData=
 [
-  ['commandblockfiler_1',['commandBlockFiler',['../classz80_1_1commandBlockFiler.html',1,'z80']]],
-  ['commandblockfiler_2ecpp_2',['commandBlockFiler.cpp',['../commandBlockFiler_8cpp.html',1,'']]],
-  ['commandblockfiler_2eh_3',['commandBlockFiler.h',['../commandBlockFiler_8h.html',1,'']]],
-  ['commandblockprinter_4',['commandBlockPrinter',['../classz80_1_1commandBlockPrinter.html',1,'z80::commandBlockPrinter'],['../classz80_1_1commandBlockPrinter.html#ad3708d996ad93e769609287f8a08b41f',1,'z80::commandBlockPrinter::commandBlockPrinter()']]],
-  ['commandblockprinter_2ecpp_5',['commandBlockPrinter.cpp',['../commandBlockPrinter_8cpp.html',1,'']]],
-  ['commandblockprinter_2eh_6',['commandBlockPrinter.h',['../commandBlockPrinter_8h.html',1,'']]],
-  ['commandstatemachine_7',['commandStateMachine',['../classz80_1_1commandStateMachine.html',1,'z80::commandStateMachine'],['../classz80_1_1commandStateMachine.html#a91f1a14737842f3612a765c62ca4b701',1,'z80::commandStateMachine::commandStateMachine()']]],
-  ['commandstatemachine_2ecpp_8',['commandStateMachine.cpp',['../commandStateMachine_8cpp.html',1,'']]],
-  ['commandstatemachine_2eh_9',['commandStateMachine.h',['../commandStateMachine_8h.html',1,'']]],
-  ['commandstatemachinestate_10',['commandStateMachineState',['../classz80_1_1commandStateMachineState.html',1,'z80::commandStateMachineState'],['../classz80_1_1commandStateMachineState.html#a54bf5fa3a752716d04c71a2b73c0a5d9',1,'z80::commandStateMachineState::commandStateMachineState()']]],
-  ['commandstatemachinestate_2ecpp_11',['commandStateMachineState.cpp',['../commandStateMachineState_8cpp.html',1,'']]],
-  ['commandstatemachinestate_2eh_12',['commandStateMachineState.h',['../commandStateMachineState_8h.html',1,'']]],
-  ['commandstatemachinestatedynamicblock_13',['commandStateMachineStateDynamicBlock',['../classz80_1_1commandStateMachineStateDynamicBlock.html',1,'z80::commandStateMachineStateDynamicBlock'],['../classz80_1_1commandStateMachineStateDynamicBlock.html#a0c04d53b821311ced7daa13f978d5c87',1,'z80::commandStateMachineStateDynamicBlock::commandStateMachineStateDynamicBlock()']]],
-  ['commandstatemachinestatedynamicblock_2ecpp_14',['commandStateMachineStateDynamicBlock.cpp',['../commandStateMachineStateDynamicBlock_8cpp.html',1,'']]],
-  ['commandstatemachinestatedynamicblock_2eh_15',['commandStateMachineStateDynamicBlock.h',['../commandStateMachineStateDynamicBlock_8h.html',1,'']]],
-  ['commandstatemachinestateidle_16',['commandStateMachineStateIdle',['../classz80_1_1commandStateMachineStateIdle.html',1,'z80::commandStateMachineStateIdle'],['../classz80_1_1commandStateMachineStateIdle.html#a0a0df18900de1b132464459603b2e136',1,'z80::commandStateMachineStateIdle::commandStateMachineStateIdle()']]],
-  ['commandstatemachinestateidle_2ecpp_17',['commandStateMachineStateIdle.cpp',['../commandStateMachineStateIdle_8cpp.html',1,'']]],
-  ['commandstatemachinestateidle_2eh_18',['commandStateMachineStateIdle.h',['../commandStateMachineStateIdle_8h.html',1,'']]],
-  ['commandstatemachinestatestaticblock_19',['commandStateMachineStateStaticBlock',['../classz80_1_1commandStateMachineStateStaticBlock.html',1,'z80::commandStateMachineStateStaticBlock'],['../classz80_1_1commandStateMachineStateStaticBlock.html#aff7f62076fc36a55580bc07c3bafc4fd',1,'z80::commandStateMachineStateStaticBlock::commandStateMachineStateStaticBlock()']]],
-  ['commandstatemachinestatestaticblock_2ecpp_20',['commandStateMachineStateStaticBlock.cpp',['../commandStateMachineStateStaticBlock_8cpp.html',1,'']]],
-  ['commandstatemachinestatestaticblock_2eh_21',['commandStateMachineStateStaticBlock.h',['../commandStateMachineStateStaticBlock_8h.html',1,'']]],
-  ['cstatemachine_22',['cStateMachine',['../classz80_1_1commandStateMachineState.html#aa603acea5cbd7bd4bd6d1ba4ebec9cab',1,'z80::commandStateMachineState']]],
-  ['currentstate_23',['currentState',['../classz80_1_1stateMachine.html#abb92572412bb8e9ff64ed13c8842033e',1,'z80::stateMachine']]]
+  ['blockstarttime_1',['blockStartTime',['../classz80_1_1commandStateMachineState.html#a2d1af131f9d9995157d66d1755d636e0',1,'z80::commandStateMachineState']]]
 ];

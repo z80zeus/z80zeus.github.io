@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/commandStateMachineStateStaticBlock.h File Reference</title>
+<title>async: src/commandStateMachineStateStaticBlock.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -78,27 +78,27 @@ $(function() {
 <code>#include &quot;<a class="el" href="commandStateMachineState_8h_source.html">commandStateMachineState.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state_8h_source.html">state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stateMachine_8h_source.html">stateMachine.h</a>&quot;</code><br />
-<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for commandStateMachineStateStaticBlock.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="commandStateMachineStateStaticBlock_8h__incl.png" border="0" usemap="#src_2commandStateMachineStateStaticBlock_8h" alt=""/></div>
 <map name="src_2commandStateMachineStateStaticBlock_8h" id="src_2commandStateMachineStateStaticBlock_8h">
-<area shape="rect" title=" " alt="" coords="359,5,593,47"/>
-<area shape="rect" href="commandStateMachine_8h.html" title=" " alt="" coords="225,169,413,196"/>
-<area shape="rect" href="stateMachine_8h.html" title=" " alt="" coords="488,244,611,271"/>
-<area shape="rect" href="state_8h.html" title=" " alt="" coords="604,319,671,345"/>
-<area shape="rect" title=" " alt="" coords="479,393,537,420"/>
-<area shape="rect" title=" " alt="" coords="417,319,495,345"/>
-<area shape="rect" href="commandStateMachineState_8h.html" title=" " alt="" coords="538,95,761,121"/>
-<area shape="rect" href="publisher_8h.html" title=" " alt="" coords="163,244,256,271"/>
-<area shape="rect" href="subscriber_8h.html" title=" " alt="" coords="45,319,145,345"/>
-<area shape="rect" title=" " alt="" coords="342,244,413,271"/>
-<area shape="rect" title=" " alt="" coords="255,319,342,345"/>
-<area shape="rect" title=" " alt="" coords="169,319,231,345"/>
-<area shape="rect" title=" " alt="" coords="519,319,579,345"/>
-<area shape="rect" title=" " alt="" coords="668,169,727,196"/>
+<area shape="rect" title=" " alt="" coords="449,5,683,47"/>
+<area shape="rect" href="commandStateMachine_8h.html" title=" " alt="" coords="168,169,356,196"/>
+<area shape="rect" href="stateMachine_8h.html" title=" " alt="" coords="618,244,741,271"/>
+<area shape="rect" href="state_8h.html" title=" " alt="" coords="761,319,827,345"/>
+<area shape="rect" title=" " alt="" coords="381,244,439,271"/>
+<area shape="rect" href="commandStateMachineState_8h.html" title=" " alt="" coords="455,95,677,121"/>
+<area shape="rect" href="publisher_8h.html" title=" " alt="" coords="111,244,205,271"/>
+<area shape="rect" href="subscriber_8h.html" title=" " alt="" coords="203,319,303,345"/>
+<area shape="rect" title=" " alt="" coords="285,244,356,271"/>
+<area shape="rect" title=" " alt="" coords="5,319,92,345"/>
+<area shape="rect" title=" " alt="" coords="116,319,179,345"/>
+<area shape="rect" title=" " alt="" coords="502,319,579,345"/>
+<area shape="rect" title=" " alt="" coords="649,319,709,345"/>
+<area shape="rect" title=" " alt="" coords="533,169,599,196"/>
+<area shape="rect" title=" " alt="" coords="674,169,733,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -117,7 +117,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html">z80::commandStateMachineStateStaticBlock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды (<a class="el" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).">z80::commandStateMachine</a>) и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; - промежуточный класс, базовый для всех возможных состояний авт...">z80::commandStateMachineState</a>.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>

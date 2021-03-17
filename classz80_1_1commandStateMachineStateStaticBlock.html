@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::commandStateMachineStateStaticBlock Class Reference</title>
+<title>async: z80::commandStateMachineStateStaticBlock Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>.  
+<p>Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды (<a class="el" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).">z80::commandStateMachine</a>) и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; - промежуточный класс, базовый для всех возможных состояний авт...">z80::commandStateMachineState</a>.  
  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="commandStateMachineStateStaticBlock_8h_source.html">commandStateMachineStateStaticBlock.h</a>&gt;</code></p>
@@ -85,7 +85,7 @@ Inheritance diagram for z80::commandStateMachineStateStaticBlock:</div>
 <div class="center"><img src="classz80_1_1commandStateMachineStateStaticBlock__inherit__graph.png" border="0" usemap="#z80_1_1commandStateMachineStateStaticBlock_inherit__map" alt="Inheritance graph"/></div>
 <map name="z80_1_1commandStateMachineStateStaticBlock_inherit__map" id="z80_1_1commandStateMachineStateStaticBlock_inherit__map">
 <area shape="rect" title="Класс состояния автомата &quot;Обработка статического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="5,169,212,211"/>
-<area shape="rect" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state &#45; состояния абстрактного конечного автомата." alt="" coords="5,80,212,121"/>
+<area shape="rect" href="classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; &#45; промежуточный класс, базовый для всех возможных состояний авт..." alt="" coords="5,80,212,121"/>
 <area shape="rect" href="classz80_1_1state.html" title=" " alt="" coords="18,5,199,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -94,11 +94,11 @@ Collaboration diagram for z80::commandStateMachineStateStaticBlock:</div>
 <div class="dyncontent">
 <div class="center"><img src="classz80_1_1commandStateMachineStateStaticBlock__coll__graph.png" border="0" usemap="#z80_1_1commandStateMachineStateStaticBlock_coll__map" alt="Collaboration graph"/></div>
 <map name="z80_1_1commandStateMachineStateStaticBlock_coll__map" id="z80_1_1commandStateMachineStateStaticBlock_coll__map">
-<area shape="rect" title="Класс состояния автомата &quot;Обработка статического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="845,79,1052,120"/>
-<area shape="rect" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state &#45; состояния абстрактного конечного автомата." alt="" coords="589,79,796,120"/>
+<area shape="rect" title="Класс состояния автомата &quot;Обработка статического блока команд&quot; предназначен для работы с автоматом,..." alt="" coords="776,79,983,120"/>
+<area shape="rect" href="classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; &#45; промежуточный класс, базовый для всех возможных состояний авт..." alt="" coords="520,79,727,120"/>
 <area shape="rect" href="classz80_1_1state.html" title=" " alt="" coords="246,37,427,63"/>
 <area shape="rect" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата." alt="" coords="7,5,159,47"/>
-<area shape="rect" href="classz80_1_1commandStateMachine.html" title="Автомат, обрабатывающий строковые команды (в терминах задания)." alt="" coords="233,111,440,138"/>
+<area shape="rect" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания)." alt="" coords="233,111,440,138"/>
 <area shape="rect" href="classz80_1_1stateMachine.html" title=" " alt="" coords="7,71,159,112"/>
 <area shape="rect" href="classz80_1_1subscriber.html" title=" " alt="" coords="5,136,160,177"/>
 <area shape="rect" href="classz80_1_1publisher.html" title=" " alt="" coords="9,201,157,243"/>
@@ -107,52 +107,66 @@ Collaboration diagram for z80::commandStateMachineStateStaticBlock:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aff7f62076fc36a55580bc07c3bafc4fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html#aff7f62076fc36a55580bc07c3bafc4fd">commandStateMachineStateStaticBlock</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>, const std::string &amp;iAction)</td></tr>
-<tr class="memdesc:aff7f62076fc36a55580bc07c3bafc4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструкту состояния передаётся ссылка на автомат, в контексте которого это состояние работают.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#aff7f62076fc36a55580bc07c3bafc4fd">More...</a><br /></td></tr>
-<tr class="separator:aff7f62076fc36a55580bc07c3bafc4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bcbad31502db2e280b25315fea056e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html#a5bcbad31502db2e280b25315fea056e6">commandStateMachineStateStaticBlock</a> (<a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> *<a class="el" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a>, const std::string &amp;iAction)</td></tr>
+<tr class="memdesc:a5bcbad31502db2e280b25315fea056e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструкту состояния передаётся ссылка на автомат, в контексте которого это состояние работают.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#a5bcbad31502db2e280b25315fea056e6">More...</a><br /></td></tr>
+<tr class="separator:a5bcbad31502db2e280b25315fea056e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a556500b51a85dfdd1fa17389df69c247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html#a556500b51a85dfdd1fa17389df69c247">inputAction</a> (const std::string &amp;iAction) override</td></tr>
 <tr class="memdesc:a556500b51a85dfdd1fa17389df69c247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Входное воздействие на автомат.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#a556500b51a85dfdd1fa17389df69c247">More...</a><br /></td></tr>
 <tr class="separator:a556500b51a85dfdd1fa17389df69c247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d4ec4ec6b1a586320146149041f544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineStateStaticBlock.html#a01d4ec4ec6b1a586320146149041f544">finish</a> () override</td></tr>
 <tr class="memdesc:a01d4ec4ec6b1a586320146149041f544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызов данного метода является сигналом о том, что автомат заканчивает работу и объекту нужно завершить свой алгоритм.  <a href="classz80_1_1commandStateMachineStateStaticBlock.html#a01d4ec4ec6b1a586320146149041f544">More...</a><br /></td></tr>
 <tr class="separator:a01d4ec4ec6b1a586320146149041f544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classz80_1_1commandStateMachineState"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1commandStateMachineState')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></td></tr>
+<tr class="memitem:af9100ea88745543f843a89f028caceea inherit pub_methods_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#af9100ea88745543f843a89f028caceea">setCStateMachine</a> (<a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> *cStateMachine)</td></tr>
+<tr class="memdesc:af9100ea88745543f843a89f028caceea inherit pub_methods_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записывает в объект указатель на объект-автомат, в контексте которого работает текущее состояние.  <a href="classz80_1_1commandStateMachineState.html#af9100ea88745543f843a89f028caceea">More...</a><br /></td></tr>
+<tr class="separator:af9100ea88745543f843a89f028caceea inherit pub_methods_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classz80_1_1state"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1state')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1state.html">z80::state&lt; std::string &gt;</a></td></tr>
-<tr class="memitem:a1d8a68d9833e4dcd6241cfd55c5187ff inherit pub_methods_classz80_1_1state"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">state</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>)</td></tr>
-<tr class="memdesc:a1d8a68d9833e4dcd6241cfd55c5187ff inherit pub_methods_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору состояния передаётся ссылка на автомат, в контексте которого он работает.  <a href="classz80_1_1state.html#a1d8a68d9833e4dcd6241cfd55c5187ff">More...</a><br /></td></tr>
-<tr class="separator:a1d8a68d9833e4dcd6241cfd55c5187ff inherit pub_methods_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86e499c4078f7a84aae423cd4fbbe6b inherit pub_methods_classz80_1_1state"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">state</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>)</td></tr>
+<tr class="memdesc:ae86e499c4078f7a84aae423cd4fbbe6b inherit pub_methods_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору состояния передаётся указатель на автомат, в контексте которого он работает.  <a href="classz80_1_1state.html#ae86e499c4078f7a84aae423cd4fbbe6b">More...</a><br /></td></tr>
+<tr class="separator:ae86e499c4078f7a84aae423cd4fbbe6b inherit pub_methods_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab133877192296f7042c919bab0cd5cf6 inherit pub_methods_classz80_1_1state"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">~state</a> ()=default</td></tr>
-<tr class="memdesc:ab133877192296f7042c919bab0cd5cf6 inherit pub_methods_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса по-умолчанию.  <a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">More...</a><br /></td></tr>
+<tr class="memdesc:ab133877192296f7042c919bab0cd5cf6 inherit pub_methods_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Полиморфному классу необходим деструктор. Для данного класса достаточно реализации по-умолчанию.  <a href="classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6">More...</a><br /></td></tr>
 <tr class="separator:ab133877192296f7042c919bab0cd5cf6 inherit pub_methods_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464f147c3c7ffabf09693b69e02ce06d inherit pub_methods_classz80_1_1state"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">setStateMachine</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *sMachine)</td></tr>
+<tr class="memdesc:a464f147c3c7ffabf09693b69e02ce06d inherit pub_methods_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указать состоянию указатель на новый автомат, в контексте которого теперь будет работать состояние.  <a href="classz80_1_1state.html#a464f147c3c7ffabf09693b69e02ce06d">More...</a><br /></td></tr>
+<tr class="separator:a464f147c3c7ffabf09693b69e02ce06d inherit pub_methods_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classz80_1_1commandStateMachineState"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classz80_1_1commandStateMachineState')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></td></tr>
-<tr class="memitem:a54bf5fa3a752716d04c71a2b73c0a5d9 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a54bf5fa3a752716d04c71a2b73c0a5d9">commandStateMachineState</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a>)</td></tr>
-<tr class="memdesc:a54bf5fa3a752716d04c71a2b73c0a5d9 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание объектов данного класса не предусмотрено, поэтому единственный конструктор находится в защищённой секции и вызывается конструкторами классов-наследников.  <a href="classz80_1_1commandStateMachineState.html#a54bf5fa3a752716d04c71a2b73c0a5d9">More...</a><br /></td></tr>
-<tr class="separator:a54bf5fa3a752716d04c71a2b73c0a5d9 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13b77902002f90d1e3877b94cf06d4 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a0e13b77902002f90d1e3877b94cf06d4">commandStateMachineState</a> (<a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> *<a class="el" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a>)</td></tr>
+<tr class="memdesc:a0e13b77902002f90d1e3877b94cf06d4 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание объектов данного класса не предусмотрено, поэтому единственный конструктор находится в защищённой секции и вызывается конструкторами классов-наследников.  <a href="classz80_1_1commandStateMachineState.html#a0e13b77902002f90d1e3877b94cf06d4">More...</a><br /></td></tr>
+<tr class="separator:a0e13b77902002f90d1e3877b94cf06d4 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109c2294bff80d3b04d8c9d804bae277 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a109c2294bff80d3b04d8c9d804bae277">sendSavedCommands</a> ()</td></tr>
-<tr class="memdesc:a109c2294bff80d3b04d8c9d804bae277 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция отправки сохранённого блока команд. Это - сервисная функция, используемая в наследниках.  <a href="classz80_1_1commandStateMachineState.html#a109c2294bff80d3b04d8c9d804bae277">More...</a><br /></td></tr>
+<tr class="memdesc:a109c2294bff80d3b04d8c9d804bae277 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция отправки подписчикам автомата сохранённого блока команд.  <a href="classz80_1_1commandStateMachineState.html#a109c2294bff80d3b04d8c9d804bae277">More...</a><br /></td></tr>
 <tr class="separator:a109c2294bff80d3b04d8c9d804bae277 inherit pro_methods_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classz80_1_1commandStateMachineState"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classz80_1_1commandStateMachineState')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></td></tr>
 <tr class="memitem:a68d369db1eb7deaedfc92d58d53562c3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a68d369db1eb7deaedfc92d58d53562c3">savedCommands</a></td></tr>
-<tr class="memdesc:a68d369db1eb7deaedfc92d58d53562c3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок команд, накопленных объектом.  <a href="classz80_1_1commandStateMachineState.html#a68d369db1eb7deaedfc92d58d53562c3">More...</a><br /></td></tr>
+<tr class="memdesc:a68d369db1eb7deaedfc92d58d53562c3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок команд, накопленных объектом. Заполняется классами-наследниками.  <a href="classz80_1_1commandStateMachineState.html#a68d369db1eb7deaedfc92d58d53562c3">More...</a><br /></td></tr>
 <tr class="separator:a68d369db1eb7deaedfc92d58d53562c3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa603acea5cbd7bd4bd6d1ba4ebec9cab inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#aa603acea5cbd7bd4bd6d1ba4ebec9cab">cStateMachine</a></td></tr>
-<tr class="memdesc:aa603acea5cbd7bd4bd6d1ba4ebec9cab inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на объект автомата, приведённый к типу <a class="el" href="classz80_1_1commandStateMachine.html" title="Автомат, обрабатывающий строковые команды (в терминах задания).">z80::commandStateMachine</a>. Для объектов производных классов.  <a href="classz80_1_1commandStateMachineState.html#aa603acea5cbd7bd4bd6d1ba4ebec9cab">More...</a><br /></td></tr>
-<tr class="separator:aa603acea5cbd7bd4bd6d1ba4ebec9cab inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d1af131f9d9995157d66d1755d636e0 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a2d1af131f9d9995157d66d1755d636e0">blockStartTime</a></td></tr>
-<tr class="memdesc:a2d1af131f9d9995157d66d1755d636e0 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время (unixtime) начала (открытия) текущего блока команд. Это время инициализируется в конструкторе и используется в работе функции <a class="el" href="classz80_1_1commandStateMachineState.html#a109c2294bff80d3b04d8c9d804bae277" title="Функция отправки сохранённого блока команд. Это - сервисная функция, используемая в наследниках.">sendSavedCommands()</a>.  <a href="classz80_1_1commandStateMachineState.html#a2d1af131f9d9995157d66d1755d636e0">More...</a><br /></td></tr>
+<tr class="memdesc:a2d1af131f9d9995157d66d1755d636e0 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время (unixtime) начала (открытия) текущего блока команд. Это время инициализируется текущим временем в конструкторе и используется в работе функции <a class="el" href="classz80_1_1commandStateMachineState.html#a109c2294bff80d3b04d8c9d804bae277" title="Функция отправки подписчикам автомата сохранённого блока команд.">sendSavedCommands()</a> для идентификации блоков команд. См. также startTimePostfix.  <a href="classz80_1_1commandStateMachineState.html#a2d1af131f9d9995157d66d1755d636e0">More...</a><br /></td></tr>
 <tr class="separator:a2d1af131f9d9995157d66d1755d636e0 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43474d6951d84a7e436c45ebfe9ad9f3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#a43474d6951d84a7e436c45ebfe9ad9f3">startTimePostfix</a> = 0</td></tr>
+<tr class="memdesc:a43474d6951d84a7e436c45ebfe9ad9f3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение счётчика созданных состояний (countPostfix), присвоенное данному состоянию в конструкторе.  <a href="classz80_1_1commandStateMachineState.html#a43474d6951d84a7e436c45ebfe9ad9f3">More...</a><br /></td></tr>
+<tr class="separator:a43474d6951d84a7e436c45ebfe9ad9f3 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c45c2340dbda722dbe17935256d338 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#af2c45c2340dbda722dbe17935256d338">csm</a> = nullptr</td></tr>
+<tr class="memdesc:af2c45c2340dbda722dbe17935256d338 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на автомат в контексте которого работает состояние.  <a href="classz80_1_1commandStateMachineState.html#af2c45c2340dbda722dbe17935256d338">More...</a><br /></td></tr>
+<tr class="separator:af2c45c2340dbda722dbe17935256d338 inherit pro_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classz80_1_1state"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classz80_1_1state')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classz80_1_1state.html">z80::state&lt; std::string &gt;</a></td></tr>
-<tr class="memitem:a780f08a469a5e61e0f4ce0cc28aa0f95 inherit pro_attribs_classz80_1_1state"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">sm</a></td></tr>
-<tr class="memdesc:a780f08a469a5e61e0f4ce0cc28aa0f95 inherit pro_attribs_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на конечный автомат, с которым работает данное состояние.  <a href="classz80_1_1state.html#a780f08a469a5e61e0f4ce0cc28aa0f95">More...</a><br /></td></tr>
-<tr class="separator:a780f08a469a5e61e0f4ce0cc28aa0f95 inherit pro_attribs_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f076e11427bf5348e89f85ba15b87f inherit pro_attribs_classz80_1_1state"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">sm</a></td></tr>
+<tr class="memdesc:a04f076e11427bf5348e89f85ba15b87f inherit pro_attribs_classz80_1_1state"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на конечный автомат, с которым работает данное состояние.  <a href="classz80_1_1state.html#a04f076e11427bf5348e89f85ba15b87f">More...</a><br /></td></tr>
+<tr class="separator:a04f076e11427bf5348e89f85ba15b87f inherit pro_attribs_classz80_1_1state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classz80_1_1commandStateMachineState"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classz80_1_1commandStateMachineState')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classz80_1_1commandStateMachineState.html">z80::commandStateMachineState</a></td></tr>
+<tr class="memitem:af3c58d102259d44330f79c8f25500a7a inherit pro_static_attribs_classz80_1_1commandStateMachineState"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachineState.html#af3c58d102259d44330f79c8f25500a7a">countPostfix</a> = 0</td></tr>
+<tr class="memdesc:af3c58d102259d44330f79c8f25500a7a inherit pro_static_attribs_classz80_1_1commandStateMachineState"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сквозной счётчик созданных состояний.  <a href="classz80_1_1commandStateMachineState.html#af3c58d102259d44330f79c8f25500a7a">More...</a><br /></td></tr>
+<tr class="separator:af3c58d102259d44330f79c8f25500a7a inherit pro_static_attribs_classz80_1_1commandStateMachineState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс является подтипом класса z80::state - состояния абстрактного конечного автомата.">z80::commandStateMachineState</a>. </p>
+<div class="textblock"><p>Класс состояния автомата "Обработка статического блока команд" предназначен для работы с автоматом, обрабатывающим строковые команды (<a class="el" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).">z80::commandStateMachine</a>) и наследуется от общего класса состояний автомата данного вида - <a class="el" href="classz80_1_1commandStateMachineState.html" title="Класс &quot;Состояние строкового автомата&quot; - промежуточный класс, базовый для всех возможных состояний авт...">z80::commandStateMachineState</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aff7f62076fc36a55580bc07c3bafc4fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff7f62076fc36a55580bc07c3bafc4fd">&#9670;&nbsp;</a></span>commandStateMachineStateStaticBlock()</h2>
+<a id="a5bcbad31502db2e280b25315fea056e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bcbad31502db2e280b25315fea056e6">&#9670;&nbsp;</a></span>commandStateMachineStateStaticBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,8 +174,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">commandStateMachineStateStaticBlock::commandStateMachineStateStaticBlock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&#160;</td>
-          <td class="paramname"><em>stateMachine</em>, </td>
+          <td class="paramtype"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a> *&#160;</td>
+          <td class="paramname"><em>sm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -180,8 +194,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Конструкту состояния передаётся ссылка на автомат, в контексте которого это состояние работают. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a></td><td>Ссылка на объект-автомат. </td></tr>
-    <tr><td class="paramname">iAction</td><td>Начальное входное воздействие на автомат, которое привело к переключению в данное состояние. </td></tr>
+    <tr><td class="paramname">sm</td><td>Указатель на объект-автомат. </td></tr>
+    <tr><td class="paramname">iAction</td><td>Начальное входное воздействие на автомат, которое привело к переключению в данное состояние. Его объект запоминает, как первую команду блока. </td></tr>
   </table>
   </dd>
 </dl>

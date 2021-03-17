@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::subscriber&lt; T &gt; Class Template Reference</title>
+<title>async: z80::subscriber&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classz80_1_1subscriber-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -75,15 +76,21 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.  
+<p>Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.  
  <a href="classz80_1_1subscriber.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="subscriber_8h_source.html">subscriber.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae5c53beb5969c571b2314b51f222c0e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> = T</td></tr>
+<tr class="memdesc:ae5c53beb5969c571b2314b51f222c0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Псевдоним типа, с которым работает шаблон.  <a href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">More...</a><br /></td></tr>
+<tr class="separator:ae5c53beb5969c571b2314b51f222c0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5dd7aef485d4e04e65dd6e2b490b7df6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a> ()=default</td></tr>
-<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса имеет реализацию по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
+<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
 <tr class="separator:a5dd7aef485d4e04e65dd6e2b490b7df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04e7fce7e30e075bbd00ccbd6b4aff7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">update</a> (const T &amp;data)=0</td></tr>
 <tr class="memdesc:a04e7fce7e30e075bbd00ccbd6b4aff7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оповещение подписчика о значении.  <a href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">More...</a><br /></td></tr>
@@ -96,15 +103,38 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class z80::subscriber&lt; T &gt;</h3>
 
-<p>Шаблон класса subscriber. Обеспечивает функционал подписчика на событие. </p>
+<p>Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Тип, с которым работает класс.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Функционал подписчика заключается в получении нового значения. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>Интерфейс Подписчика заключается в получении:</p><ul>
+<li>новых значений,</li>
+<li>оповещения об отписке со стороны Издателя. </li>
+</ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae5c53beb5969c571b2314b51f222c0e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c53beb5969c571b2314b51f222c0e6">&#9670;&nbsp;</a></span>MessageType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classz80_1_1subscriber.html">z80::subscriber</a>&lt; T &gt;::<a class="el" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Псевдоним типа, с которым работает шаблон. </p>
+<p>Используется - где потребуется. Например, асинхронная обёртка <a class="el" href="classz80_1_1subscriberAsyncWrapper.html" title="Шаблонный класс-обёртка для обеспечения асинхронной работы подписчика в паре Издатель-Подписчик.">subscriberAsyncWrapper</a> типизирует свою внутреннюю очередь сообщений этим типом. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5dd7aef485d4e04e65dd6e2b490b7df6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dd7aef485d4e04e65dd6e2b490b7df6">&#9670;&nbsp;</a></span>~subscriber()</h2>
 
@@ -130,7 +160,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Деструктор полиморфного класса имеет реализацию по-умолчанию. </p>
+<p>Деструктор полиморфного класса. Достаточно реализации по-умолчанию. </p>
 
 </div>
 </div>
@@ -161,8 +191,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Оповещение подписчика об отписке от издателя. </p>
-
-<p>Reimplemented in <a class="el" href="classz80_1_1commandStateMachine.html#a52695a8460ee9697b37b8ecc59182fff">z80::commandStateMachine</a>.</p>
+<p>Этот функционал может быть интересен далеко не всем наследникам, поэтому эта функция не чистая виртуальная, а с реализацией по-умолчанию. По-умолчанию - не делает ничего. </p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getstaticblocksize_25',['getStaticBlockSize',['../classz80_1_1commandStateMachine.html#af9fb5b0244ecf8edf14ec302998db83c',1,'z80::commandStateMachine']]]
+  ['disconnect_29',['disconnect',['../namespaceasync.html#a04233bf9bec326f7bcb4e1a9d5b8ee9d',1,'async']]]
 ];

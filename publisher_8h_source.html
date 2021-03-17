@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: src/publisher.h Source File</title>
+<title>async: src/publisher.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -85,38 +85,44 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">using</span> <a class="code" href="classz80_1_1subscriber.html">Subscriber</a> = <a class="code" href="classz80_1_1subscriber.html">z80::subscriber&lt;T&gt;</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">publisher</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a>(<a class="code" href="classz80_1_1subscriber.html">Subscriber</a>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a>) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      subscribers.push_back(<a class="code" href="classz80_1_1subscriber.html">subscriber</a>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">unsubscribeAll</a>() {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a> : subscribers)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classz80_1_1subscriber.html">subscriber</a>.get().<a class="code" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      subscribers.clear();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">notify</a>(<span class="keyword">const</span> T&amp; data) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a> : subscribers)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classz80_1_1subscriber.html">subscriber</a>.get().<a class="code" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">update</a>(data);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::vector &lt;std::reference_wrapper&lt;Subscriber&gt;&gt; subscribers;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">   34</a></span>&#160;    <a class="code" href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">publisher</a>(<a class="code" href="classz80_1_1publisher.html">z80::publisher&lt;T&gt;</a>&amp;&amp; p) noexcept : subscribers(std::move(p.subscribers)) {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">   45</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a>(<a class="code" href="classz80_1_1subscriber.html">Subscriber</a>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      subscribers.push_back(<a class="code" href="classz80_1_1subscriber.html">subscriber</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">   54</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">unsubscribeAll</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a> : subscribers)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classz80_1_1subscriber.html">subscriber</a>.get().<a class="code" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      subscribers.clear();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">   65</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">notify</a>(<span class="keyword">const</span> T&amp; data) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code" href="classz80_1_1subscriber.html">subscriber</a> : subscribers)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classz80_1_1subscriber.html">subscriber</a>.get().<a class="code" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">update</a>(data);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector &lt;std::reference_wrapper&lt;Subscriber&gt;&gt; subscribers;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassz80_1_1publisher_html_ad5b23cbded2f6e3a61c6d39a5ebef411"><div class="ttname"><a href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">z80::publisher::subscribe</a></div><div class="ttdeci">virtual void subscribe(Subscriber &amp;subscriber)</div><div class="ttdoc">Функция подписки Подписчика (Subscriber) на рассылку значения типа T.</div><div class="ttdef"><b>Definition:</b> publisher.h:34</div></div>
-<div class="ttc" id="aclassz80_1_1subscriber_html_ae367506ca1abefaef9619e4c8459d070"><div class="ttname"><a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">z80::subscriber::unsubscribed</a></div><div class="ttdeci">virtual void unsubscribed()</div><div class="ttdoc">Оповещение подписчика об отписке от издателя.</div><div class="ttdef"><b>Definition:</b> subscriber.h:31</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_ad5b23cbded2f6e3a61c6d39a5ebef411"><div class="ttname"><a href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">z80::publisher::subscribe</a></div><div class="ttdeci">virtual void subscribe(Subscriber &amp;subscriber)</div><div class="ttdoc">Функция подписки Подписчика (Subscriber) на рассылку значения типа T.</div><div class="ttdef"><b>Definition:</b> publisher.h:45</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html_ae367506ca1abefaef9619e4c8459d070"><div class="ttname"><a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">z80::subscriber::unsubscribed</a></div><div class="ttdeci">virtual void unsubscribed()</div><div class="ttdoc">Оповещение подписчика об отписке от издателя.</div><div class="ttdef"><b>Definition:</b> subscriber.h:42</div></div>
 <div class="ttc" id="asubscriber_8h_html"><div class="ttname"><a href="subscriber_8h.html">subscriber.h</a></div></div>
-<div class="ttc" id="aclassz80_1_1publisher_html_a8cdbed5361b1605abd6b61d6226324b6"><div class="ttname"><a href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">z80::publisher::unsubscribeAll</a></div><div class="ttdeci">virtual void unsubscribeAll()</div><div class="ttdoc">Функция отписки всех подписчиков. Функция индивидуальной отписки в данном проекте не требуется.</div><div class="ttdef"><b>Definition:</b> publisher.h:42</div></div>
-<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:15</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_a8cdbed5361b1605abd6b61d6226324b6"><div class="ttname"><a href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">z80::publisher::unsubscribeAll</a></div><div class="ttdeci">virtual void unsubscribeAll()</div><div class="ttdoc">Функция отписки всех подписчиков. Функция индивидуальной отписки в данном проекте не требуется.</div><div class="ttdef"><b>Definition:</b> publisher.h:54</div></div>
+<div class="ttc" id="aclassz80_1_1subscriber_html"><div class="ttname"><a href="classz80_1_1subscriber.html">z80::subscriber</a></div><div class="ttdoc">Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.</div><div class="ttdef"><b>Definition:</b> subscriber.h:17</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_a7cc5712738a14881def91fd4c5eb3fba"><div class="ttname"><a href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">z80::publisher::publisher</a></div><div class="ttdeci">publisher()=default</div><div class="ttdoc">Конструктору по-умолчанию достаточно реализации по-умолчанию.</div></div>
 <div class="ttc" id="anamespacez80_html"><div class="ttname"><a href="namespacez80.html">z80</a></div><div class="ttdoc">Файл содержит объявление класса, который выводит блок команд в файл.</div><div class="ttdef"><b>Definition:</b> commandBlockFiler.h:11</div></div>
-<div class="ttc" id="aclassz80_1_1publisher_html_a2e704591bdc68efe9a506c0ca017e857"><div class="ttname"><a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">z80::publisher::~publisher</a></div><div class="ttdeci">virtual ~publisher()=default</div><div class="ttdoc">Деструктор полиморфного класса имеет реализацию по-умолчанию.</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_a2e704591bdc68efe9a506c0ca017e857"><div class="ttname"><a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">z80::publisher::~publisher</a></div><div class="ttdeci">virtual ~publisher()=default</div><div class="ttdoc">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.</div></div>
 <div class="ttc" id="aclassz80_1_1publisher_html"><div class="ttname"><a href="classz80_1_1publisher.html">z80::publisher</a></div><div class="ttdoc">Шаблонный класс publisher. Обеспечивает функционал подписки-отписки-оповещения.</div><div class="ttdef"><b>Definition:</b> publisher.h:21</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_aa0fbcdf2fde848ab9f281d6cafbb05a7"><div class="ttname"><a href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">z80::publisher::publisher</a></div><div class="ttdeci">publisher(z80::publisher&lt; T &gt; &amp;&amp;p) noexcept</div><div class="ttdoc">Перемещающий конструктор забирает себе во владение всех подписчиков объекта-источника.</div><div class="ttdef"><b>Definition:</b> publisher.h:34</div></div>
 <div class="ttc" id="aclassz80_1_1subscriber_html_a04e7fce7e30e075bbd00ccbd6b4aff7a"><div class="ttname"><a href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">z80::subscriber::update</a></div><div class="ttdeci">virtual void update(const T &amp;data)=0</div><div class="ttdoc">Оповещение подписчика о значении.</div></div>
-<div class="ttc" id="aclassz80_1_1publisher_html_a210c9929b39cedb66a13b15bed6507e4"><div class="ttname"><a href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">z80::publisher::notify</a></div><div class="ttdeci">virtual void notify(const T &amp;data)</div><div class="ttdoc">Функция оповещения подписчиков о значении data типа T.</div><div class="ttdef"><b>Definition:</b> publisher.h:53</div></div>
+<div class="ttc" id="aclassz80_1_1publisher_html_a210c9929b39cedb66a13b15bed6507e4"><div class="ttname"><a href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">z80::publisher::notify</a></div><div class="ttdeci">virtual void notify(const T &amp;data)</div><div class="ttdoc">Функция оповещения подписчиков о значении data типа T.</div><div class="ttdef"><b>Definition:</b> publisher.h:65</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

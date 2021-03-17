@@ -1,5 +1,5 @@
 <map id="z80::commandStateMachine" name="z80::commandStateMachine">
-<area shape="rect" id="node1" title="Автомат, обрабатывающий строковые команды (в терминах задания)." alt="" coords="208,78,415,105"/>
+<area shape="rect" id="node1" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания)." alt="" coords="208,78,415,105"/>
 <area shape="rect" id="node2" href="$classz80_1_1stateMachine.html" title=" " alt="" coords="7,5,159,47"/>
 <area shape="rect" id="node3" href="$classz80_1_1subscriber.html" title=" " alt="" coords="5,71,160,112"/>
 <area shape="rect" id="node4" href="$classz80_1_1publisher.html" title=" " alt="" coords="9,136,157,177"/>

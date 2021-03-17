@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::commandStateMachine Class Reference</title>
+<title>async: z80::commandStateMachine Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Автомат, обрабатывающий строковые команды (в терминах задания).  
+<p>Конечный автомат, обрабатывающий строковые "команды" (в терминах задания).  
  <a href="classz80_1_1commandStateMachine.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="commandStateMachine_8h_source.html">commandStateMachine.h</a>&gt;</code></p>
@@ -84,7 +84,7 @@ Inheritance diagram for z80::commandStateMachine:</div>
 <div class="dyncontent">
 <div class="center"><img src="classz80_1_1commandStateMachine__inherit__graph.png" border="0" usemap="#z80_1_1commandStateMachine_inherit__map" alt="Inheritance graph"/></div>
 <map name="z80_1_1commandStateMachine_inherit__map" id="z80_1_1commandStateMachine_inherit__map">
-<area shape="rect" title="Автомат, обрабатывающий строковые команды (в терминах задания)." alt="" coords="208,78,415,105"/>
+<area shape="rect" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания)." alt="" coords="208,78,415,105"/>
 <area shape="rect" href="classz80_1_1stateMachine.html" title=" " alt="" coords="7,5,159,47"/>
 <area shape="rect" href="classz80_1_1subscriber.html" title=" " alt="" coords="5,71,160,112"/>
 <area shape="rect" href="classz80_1_1publisher.html" title=" " alt="" coords="9,136,157,177"/>
@@ -95,7 +95,7 @@ Collaboration diagram for z80::commandStateMachine:</div>
 <div class="dyncontent">
 <div class="center"><img src="classz80_1_1commandStateMachine__coll__graph.png" border="0" usemap="#z80_1_1commandStateMachine_coll__map" alt="Collaboration graph"/></div>
 <map name="z80_1_1commandStateMachine_coll__map" id="z80_1_1commandStateMachine_coll__map">
-<area shape="rect" title="Автомат, обрабатывающий строковые команды (в терминах задания)." alt="" coords="208,78,415,105"/>
+<area shape="rect" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания)." alt="" coords="208,78,415,105"/>
 <area shape="rect" href="classz80_1_1stateMachine.html" title=" " alt="" coords="7,5,159,47"/>
 <area shape="rect" href="classz80_1_1subscriber.html" title=" " alt="" coords="5,71,160,112"/>
 <area shape="rect" href="classz80_1_1publisher.html" title=" " alt="" coords="9,136,157,177"/>
@@ -107,19 +107,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a91f1a14737842f3612a765c62ca4b701"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#a91f1a14737842f3612a765c62ca4b701">commandStateMachine</a> ()</td></tr>
 <tr class="memdesc:a91f1a14737842f3612a765c62ca4b701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по-умолчанию устанавливает начальное состояние конечного автомата: Idle.  <a href="classz80_1_1commandStateMachine.html#a91f1a14737842f3612a765c62ca4b701">More...</a><br /></td></tr>
 <tr class="separator:a91f1a14737842f3612a765c62ca4b701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9553fe13a87e486b82235a14128425c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#a9553fe13a87e486b82235a14128425c8">commandStateMachine</a> (<a class="el" href="classz80_1_1commandStateMachine.html">commandStateMachine</a> &amp;&amp;csm) noexcept</td></tr>
+<tr class="memdesc:a9553fe13a87e486b82235a14128425c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор вызывает перемещающие конструкторы базовых классов и переписывает себе параметры работы машины данного (<a class="el" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).">commandStateMachine</a>) класса из секции private.  <a href="classz80_1_1commandStateMachine.html#a9553fe13a87e486b82235a14128425c8">More...</a><br /></td></tr>
+<tr class="separator:a9553fe13a87e486b82235a14128425c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af658250f36bef4186a67722c4e04e505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505">update</a> (const std::string &amp;command) override</td></tr>
-<tr class="memdesc:af658250f36bef4186a67722c4e04e505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Через функцию update объект класса получает команды. Предполагается, что от publisher'а, но ничто не мешает вызвать этот метод и постороннему коду.  <a href="classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505">More...</a><br /></td></tr>
+<tr class="memdesc:af658250f36bef4186a67722c4e04e505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Через функцию update объект класса получает команды от publisher'а, хотя ничто не мешает вызвать этот метод и постороннему коду.  <a href="classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505">More...</a><br /></td></tr>
 <tr class="separator:af658250f36bef4186a67722c4e04e505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52695a8460ee9697b37b8ecc59182fff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#a52695a8460ee9697b37b8ecc59182fff">unsubscribed</a> () override</td></tr>
-<tr class="memdesc:a52695a8460ee9697b37b8ecc59182fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция оповещает объект класса о том, что он, как подписчик, отписан от своего издателя.  <a href="classz80_1_1commandStateMachine.html#a52695a8460ee9697b37b8ecc59182fff">More...</a><br /></td></tr>
-<tr class="separator:a52695a8460ee9697b37b8ecc59182fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e650b6e6e42563d5673bb203f5fee93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#a4e650b6e6e42563d5673bb203f5fee93">setStaticBlockSize</a> (std::size_t blockSize)</td></tr>
-<tr class="memdesc:a4e650b6e6e42563d5673bb203f5fee93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливает значение свойства staticBlockSize: размер статического блока команд (выраженного в командах).  <a href="classz80_1_1commandStateMachine.html#a4e650b6e6e42563d5673bb203f5fee93">More...</a><br /></td></tr>
+<tr class="memdesc:a4e650b6e6e42563d5673bb203f5fee93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Через эту функцию устанавливается значение свойства staticBlockSize: размер статического блока команд (выраженного в командах).  <a href="classz80_1_1commandStateMachine.html#a4e650b6e6e42563d5673bb203f5fee93">More...</a><br /></td></tr>
 <tr class="separator:a4e650b6e6e42563d5673bb203f5fee93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9fb5b0244ecf8edf14ec302998db83c"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#af9fb5b0244ecf8edf14ec302998db83c">getStaticBlockSize</a> ()</td></tr>
-<tr class="memdesc:af9fb5b0244ecf8edf14ec302998db83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает значение свойства staticBlockSize: размер статического блока команд (выраженного в командах).  <a href="classz80_1_1commandStateMachine.html#af9fb5b0244ecf8edf14ec302998db83c">More...</a><br /></td></tr>
-<tr class="separator:af9fb5b0244ecf8edf14ec302998db83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa7658bfc1031dd3f0c268bbe19dd10"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1commandStateMachine.html#aefa7658bfc1031dd3f0c268bbe19dd10">getStaticBlockSize</a> () const</td></tr>
+<tr class="memdesc:aefa7658bfc1031dd3f0c268bbe19dd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает значение свойства staticBlockSize: размер статического блока команд (выраженного в командах).  <a href="classz80_1_1commandStateMachine.html#aefa7658bfc1031dd3f0c268bbe19dd10">More...</a><br /></td></tr>
+<tr class="separator:aefa7658bfc1031dd3f0c268bbe19dd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classz80_1_1stateMachine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1stateMachine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td></tr>
+<tr class="memitem:a5c05f64ae664baedea5f86a322f32ad2 inherit pub_methods_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a5c05f64ae664baedea5f86a322f32ad2">stateMachine</a> ()=default</td></tr>
+<tr class="separator:a5c05f64ae664baedea5f86a322f32ad2 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de9a532b0438ee4e7070652da9a7ee5 inherit pub_methods_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a4de9a532b0438ee4e7070652da9a7ee5">stateMachine</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&amp;sm) noexcept</td></tr>
+<tr class="memdesc:a4de9a532b0438ee4e7070652da9a7ee5 inherit pub_methods_classz80_1_1stateMachine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор перемещеает из автомата-источника к себе его текущее состояние и указывает этому состоянию свой адрес в качестве адреса его нового автомата.  <a href="classz80_1_1stateMachine.html#a4de9a532b0438ee4e7070652da9a7ee5">More...</a><br /></td></tr>
+<tr class="separator:a4de9a532b0438ee4e7070652da9a7ee5 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe41bc010c80073bcac21f74feba2237 inherit pub_methods_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#abe41bc010c80073bcac21f74feba2237">~stateMachine</a> ()</td></tr>
+<tr class="memdesc:abe41bc010c80073bcac21f74feba2237 inherit pub_methods_classz80_1_1stateMachine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор даёт текущему состоянию автомата команду завершения работы.  <a href="classz80_1_1stateMachine.html#abe41bc010c80073bcac21f74feba2237">More...</a><br /></td></tr>
+<tr class="separator:abe41bc010c80073bcac21f74feba2237 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d52c3e0ff9c8b3b93f248fd51664576 inherit pub_methods_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a3d52c3e0ff9c8b3b93f248fd51664576">stop</a> ()</td></tr>
+<tr class="memdesc:a3d52c3e0ff9c8b3b93f248fd51664576 inherit pub_methods_classz80_1_1stateMachine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останов автомата. Команда передаётся текущему состоянию автомата.  <a href="classz80_1_1stateMachine.html#a3d52c3e0ff9c8b3b93f248fd51664576">More...</a><br /></td></tr>
+<tr class="separator:a3d52c3e0ff9c8b3b93f248fd51664576 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0c5f55d10eaac9b25f849a09316a01 inherit pub_methods_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a5c0c5f55d10eaac9b25f849a09316a01">setState</a> (std::unique_ptr&lt; <a class="el" href="classz80_1_1state.html">State</a> &gt; &amp;&amp;newState)</td></tr>
 <tr class="memdesc:a5c0c5f55d10eaac9b25f849a09316a01 inherit pub_methods_classz80_1_1stateMachine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить новое состояние автомата.  <a href="classz80_1_1stateMachine.html#a5c0c5f55d10eaac9b25f849a09316a01">More...</a><br /></td></tr>
 <tr class="separator:a5c0c5f55d10eaac9b25f849a09316a01 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,11 +139,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a86266e9016d9427acd25166680abfdf2 inherit pub_methods_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classz80_1_1subscriber"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1subscriber')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td></tr>
 <tr class="memitem:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a> ()=default</td></tr>
-<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса имеет реализацию по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
+<tr class="memdesc:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.  <a href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">More...</a><br /></td></tr>
 <tr class="separator:a5dd7aef485d4e04e65dd6e2b490b7df6 inherit pub_methods_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a> ()</td></tr>
+<tr class="memdesc:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оповещение подписчика об отписке от издателя.  <a href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">More...</a><br /></td></tr>
+<tr class="separator:ae367506ca1abefaef9619e4c8459d070 inherit pub_methods_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classz80_1_1publisher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classz80_1_1publisher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td></tr>
+<tr class="memitem:a7cc5712738a14881def91fd4c5eb3fba inherit pub_methods_classz80_1_1publisher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">publisher</a> ()=default</td></tr>
+<tr class="memdesc:a7cc5712738a14881def91fd4c5eb3fba inherit pub_methods_classz80_1_1publisher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктору по-умолчанию достаточно реализации по-умолчанию.  <a href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">More...</a><br /></td></tr>
+<tr class="separator:a7cc5712738a14881def91fd4c5eb3fba inherit pub_methods_classz80_1_1publisher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fbcdf2fde848ab9f281d6cafbb05a7 inherit pub_methods_classz80_1_1publisher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">publisher</a> (<a class="el" href="classz80_1_1publisher.html">z80::publisher</a>&lt; std::string &gt; &amp;&amp;p) noexcept</td></tr>
+<tr class="memdesc:aa0fbcdf2fde848ab9f281d6cafbb05a7 inherit pub_methods_classz80_1_1publisher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор забирает себе во владение всех подписчиков объекта-источника.  <a href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">More...</a><br /></td></tr>
+<tr class="separator:aa0fbcdf2fde848ab9f281d6cafbb05a7 inherit pub_methods_classz80_1_1publisher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e704591bdc68efe9a506c0ca017e857 inherit pub_methods_classz80_1_1publisher"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a> ()=default</td></tr>
-<tr class="memdesc:a2e704591bdc68efe9a506c0ca017e857 inherit pub_methods_classz80_1_1publisher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса имеет реализацию по-умолчанию.  <a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">More...</a><br /></td></tr>
+<tr class="memdesc:a2e704591bdc68efe9a506c0ca017e857 inherit pub_methods_classz80_1_1publisher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор полиморфного класса. Достаточно реализации по-умолчанию.  <a href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">More...</a><br /></td></tr>
 <tr class="separator:a2e704591bdc68efe9a506c0ca017e857 inherit pub_methods_classz80_1_1publisher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b23cbded2f6e3a61c6d39a5ebef411 inherit pub_methods_classz80_1_1publisher"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a> (<a class="el" href="classz80_1_1subscriber.html">Subscriber</a> &amp;<a class="el" href="classz80_1_1subscriber.html">subscriber</a>)</td></tr>
 <tr class="memdesc:ad5b23cbded2f6e3a61c6d39a5ebef411 inherit pub_methods_classz80_1_1publisher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция подписки Подписчика (Subscriber) на рассылку значения типа T.  <a href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">More...</a><br /></td></tr>
@@ -146,20 +166,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classz80_1_1subscriber"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classz80_1_1subscriber')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td></tr>
+<tr class="memitem:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> = std::string</td></tr>
+<tr class="memdesc:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="mdescLeft">&#160;</td><td class="mdescRight">Псевдоним типа, с которым работает шаблон.  <a href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">More...</a><br /></td></tr>
+<tr class="separator:ae5c53beb5969c571b2314b51f222c0e6 inherit pub_types_classz80_1_1subscriber"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classz80_1_1stateMachine"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classz80_1_1stateMachine')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td></tr>
 <tr class="memitem:abb92572412bb8e9ff64ed13c8842033e inherit pro_attribs_classz80_1_1stateMachine"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classz80_1_1state.html">State</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#abb92572412bb8e9ff64ed13c8842033e">currentState</a></td></tr>
 <tr class="memdesc:abb92572412bb8e9ff64ed13c8842033e inherit pro_attribs_classz80_1_1stateMachine"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на текущее состояние автомата.  <a href="classz80_1_1stateMachine.html#abb92572412bb8e9ff64ed13c8842033e">More...</a><br /></td></tr>
 <tr class="separator:abb92572412bb8e9ff64ed13c8842033e inherit pro_attribs_classz80_1_1stateMachine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Автомат, обрабатывающий строковые команды (в терминах задания). </p>
+<div class="textblock"><p>Конечный автомат, обрабатывающий строковые "команды" (в терминах задания). </p>
 <p>Класс является конечным автоматом, для чего наследуется от шаблонного класса <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">z80::stateMachine</a> с шаблонным параметром std::string: входными данные для данного автомата являются строки. Кроме того, автомат является участником отношения publisher/subscriber, причём сразу в двух ипостасях:</p><ol type="1">
-<li>получает входные воздействия он в качестве подписчика, для чего он наследуется от шаблонного класса <a class="el" href="classz80_1_1subscriber.html" title="Шаблон класса subscriber. Обеспечивает функционал подписчика на событие.">z80::subscriber</a> с шаблонным параметром std::string и переопределяет методы update и unsubscribe. он получаеРасширяет классы subscriber и <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">stateMachine</a> типизированные std::string.</li>
-<li>рассылает блоки команд класс в качестве издателя, для чего он наследуется от шаблонного класса <a class="el" href="classz80_1_1publisher.html" title="Шаблонный класс publisher. Обеспечивает функционал подписки-отписки-оповещения.">z80::publisher</a> с шаблонным параметром std::string. От publisher'а он получает механизм рассылки уведомлений. </li>
+<li>получает входные воздействия он в качестве Подписчика, для чего он наследуется от шаблонного класса <a class="el" href="classz80_1_1subscriber.html" title="Шаблон класса subscriber. Обеспечивает интерфейс Подписчика на событие.">z80::subscriber</a> с шаблонным параметром std::string и переопределяет метод update.</li>
+<li>рассылает сфорированные блоки команд в качестве Издателя, для чего он наследуется от шаблонного класса <a class="el" href="classz80_1_1publisher.html" title="Шаблонный класс publisher. Обеспечивает функционал подписки-отписки-оповещения.">z80::publisher</a> с шаблонным параметром std::string. От publisher'а он получает механизм рассылки уведомлений. </li>
 </ol>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91f1a14737842f3612a765c62ca4b701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f1a14737842f3612a765c62ca4b701">&#9670;&nbsp;</a></span>commandStateMachine()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f1a14737842f3612a765c62ca4b701">&#9670;&nbsp;</a></span>commandStateMachine() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,9 +201,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9553fe13a87e486b82235a14128425c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9553fe13a87e486b82235a14128425c8">&#9670;&nbsp;</a></span>commandStateMachine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">commandStateMachine::commandStateMachine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classz80_1_1commandStateMachine.html">commandStateMachine</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>csm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перемещающий конструктор вызывает перемещающие конструкторы базовых классов и переписывает себе параметры работы машины данного (<a class="el" href="classz80_1_1commandStateMachine.html" title="Конечный автомат, обрабатывающий строковые &quot;команды&quot; (в терминах задания).">commandStateMachine</a>) класса из секции private. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">csm</td><td>Конечный автомат - источник перемещения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af9fb5b0244ecf8edf14ec302998db83c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9fb5b0244ecf8edf14ec302998db83c">&#9670;&nbsp;</a></span>getStaticBlockSize()</h2>
+<a id="aefa7658bfc1031dd3f0c268bbe19dd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa7658bfc1031dd3f0c268bbe19dd10">&#9670;&nbsp;</a></span>getStaticBlockSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +246,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">size_t commandStateMachine::getStaticBlockSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,43 +272,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция устанавливает значение свойства staticBlockSize: размер статического блока команд (выраженного в командах). </p>
+<p>Через эту функцию устанавливается значение свойства staticBlockSize: размер статического блока команд (выраженного в командах). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blockSize</td><td>Ожидаемое количество команд в статическом блоке команд. В штуках команд. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a52695a8460ee9697b37b8ecc59182fff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52695a8460ee9697b37b8ecc59182fff">&#9670;&nbsp;</a></span>unsubscribed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void commandStateMachine::unsubscribed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция оповещает объект класса о том, что он, как подписчик, отписан от своего издателя. </p>
-<p>Данный факт воспринимается автоматом, как сигнал завершения работы. </p>
-
-<p>Reimplemented from <a class="el" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">z80::subscriber&lt; std::string &gt;</a>.</p>
 
 </div>
 </div>
@@ -278,14 +306,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Через функцию update объект класса получает команды. Предполагается, что от publisher'а, но ничто не мешает вызвать этот метод и постороннему коду. </p>
+<p>Через функцию update объект класса получает команды от publisher'а, хотя ничто не мешает вызвать этот метод и постороннему коду. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>Новая команда (в терминах учебного задания).</td></tr>
   </table>
   </dd>
 </dl>
-<p>Эта функция передаёт полученную команду в качестве входного воздействия в автомат, который унаследован данным классом от <a class="el" href="classz80_1_1stateMachine.html" title="Базовый класс содержащий реализацию алгоритма работы конечного автомата.">z80::stateMachine</a> (z80::stateMachine::inputAction(command)). </p>
+<p>Функция передаёт полученную команду для обработки функции z80::stateMachine::inputAction(command), в контексте этого же (this) объекта. </p>
 
 <p>Implements <a class="el" href="classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a">z80::subscriber&lt; std::string &gt;</a>.</p>
 

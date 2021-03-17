@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7epublisher_120',['~publisher',['../classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857',1,'z80::publisher']]],
-  ['_7estate_121',['~state',['../classz80_1_1state.html#ab133877192296f7042c919bab0cd5cf6',1,'z80::state']]],
-  ['_7esubscriber_122',['~subscriber',['../classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6',1,'z80::subscriber']]]
+  ['unsubscribeall_162',['unsubscribeAll',['../classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6',1,'z80::publisher']]],
+  ['unsubscribed_163',['unsubscribed',['../classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070',1,'z80::subscriber']]],
+  ['update_164',['update',['../classz80_1_1commandBlockFiler.html#ae124464a80c8b55547dee3433b6542e3',1,'z80::commandBlockFiler::update()'],['../classz80_1_1commandBlockPrinter.html#ad10ed90d816163cd3fae4e50ec0263c8',1,'z80::commandBlockPrinter::update()'],['../classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505',1,'z80::commandStateMachine::update()'],['../classz80_1_1subscriber.html#a04e7fce7e30e075bbd00ccbd6b4aff7a',1,'z80::subscriber::update()'],['../classz80_1_1subscriberAsyncWrapper.html#a92eefc9b4166307bbd8c6e6bd35dabf9',1,'z80::subscriberAsyncWrapper::update()']]]
 ];

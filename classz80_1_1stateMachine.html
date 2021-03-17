@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: z80::stateMachine&lt; inputActionType &gt; Class Template Reference</title>
+<title>async: z80::stateMachine&lt; inputActionType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +83,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c05f64ae664baedea5f86a322f32ad2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a5c05f64ae664baedea5f86a322f32ad2">stateMachine</a> ()=default</td></tr>
+<tr class="separator:a5c05f64ae664baedea5f86a322f32ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de9a532b0438ee4e7070652da9a7ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a4de9a532b0438ee4e7070652da9a7ee5">stateMachine</a> (<a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&amp;sm) noexcept</td></tr>
+<tr class="memdesc:a4de9a532b0438ee4e7070652da9a7ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор перемещеает из автомата-источника к себе его текущее состояние и указывает этому состоянию свой адрес в качестве адреса его нового автомата.  <a href="classz80_1_1stateMachine.html#a4de9a532b0438ee4e7070652da9a7ee5">More...</a><br /></td></tr>
+<tr class="separator:a4de9a532b0438ee4e7070652da9a7ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe41bc010c80073bcac21f74feba2237"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#abe41bc010c80073bcac21f74feba2237">~stateMachine</a> ()</td></tr>
+<tr class="memdesc:abe41bc010c80073bcac21f74feba2237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор даёт текущему состоянию автомата команду завершения работы.  <a href="classz80_1_1stateMachine.html#abe41bc010c80073bcac21f74feba2237">More...</a><br /></td></tr>
+<tr class="separator:abe41bc010c80073bcac21f74feba2237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d52c3e0ff9c8b3b93f248fd51664576"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a3d52c3e0ff9c8b3b93f248fd51664576">stop</a> ()</td></tr>
+<tr class="memdesc:a3d52c3e0ff9c8b3b93f248fd51664576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Останов автомата. Команда передаётся текущему состоянию автомата.  <a href="classz80_1_1stateMachine.html#a3d52c3e0ff9c8b3b93f248fd51664576">More...</a><br /></td></tr>
+<tr class="separator:a3d52c3e0ff9c8b3b93f248fd51664576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0c5f55d10eaac9b25f849a09316a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classz80_1_1stateMachine.html#a5c0c5f55d10eaac9b25f849a09316a01">setState</a> (std::unique_ptr&lt; <a class="el" href="classz80_1_1state.html">State</a> &gt; &amp;&amp;newState)</td></tr>
 <tr class="memdesc:a5c0c5f55d10eaac9b25f849a09316a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить новое состояние автомата.  <a href="classz80_1_1stateMachine.html#a5c0c5f55d10eaac9b25f849a09316a01">More...</a><br /></td></tr>
 <tr class="separator:a5c0c5f55d10eaac9b25f849a09316a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,7 +114,7 @@ class z80::stateMachine&lt; inputActionType &gt;</h3>
 <p>Базовый класс содержащий реализацию алгоритма работы конечного автомата. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">inputActionType</td><td>Тип данных, с которым работает алгоритм.</td></tr>
+    <tr><td class="paramname">inputActionType</td><td>Тип данных, с которым работает алгоритм. Данные этого типа поступают на вход автомату.</td></tr>
   </table>
   </dd>
 </dl>
@@ -112,7 +123,100 @@ class z80::stateMachine&lt; inputActionType &gt;</h3>
 <li>Передаёт текущему состоянию входное воздействие.</li>
 <li>Изменяет текущее состояние по команде (в т.ч. самогО состояния). </li>
 </ol>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5c05f64ae664baedea5f86a322f32ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c05f64ae664baedea5f86a322f32ad2">&#9670;&nbsp;</a></span>stateMachine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inputActionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine</a>&lt; inputActionType &gt;::<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4de9a532b0438ee4e7070652da9a7ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de9a532b0438ee4e7070652da9a7ee5">&#9670;&nbsp;</a></span>stateMachine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inputActionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine</a>&lt; inputActionType &gt;::<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classz80_1_1stateMachine.html">StateMachine</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>sm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перемещающий конструктор перемещеает из автомата-источника к себе его текущее состояние и указывает этому состоянию свой адрес в качестве адреса его нового автомата. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sm</td><td>Автомат-источник. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe41bc010c80073bcac21f74feba2237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe41bc010c80073bcac21f74feba2237">&#9670;&nbsp;</a></span>~stateMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inputActionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine</a>&lt; inputActionType &gt;::~<a class="el" href="classz80_1_1stateMachine.html">stateMachine</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор даёт текущему состоянию автомата команду завершения работы. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a86266e9016d9427acd25166680abfdf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86266e9016d9427acd25166680abfdf2">&#9670;&nbsp;</a></span>inputAction()</h2>
 
@@ -146,7 +250,7 @@ template&lt;typename inputActionType &gt; </div>
   </table>
   </dd>
 </dl>
-<p>Автомат не содержит логики своей работы, поэтому делегирует обработку воздействия текущему объекту-состоянию. </p>
+<p>Автомат не содержит логики своей работы: вся логика находится в классах-состояниях автомата. Поэтому автомат делегирует обработку воздействия текущему объекту-состоянию. </p>
 
 </div>
 </div>
@@ -183,6 +287,35 @@ template&lt;typename inputActionType &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3d52c3e0ff9c8b3b93f248fd51664576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d52c3e0ff9c8b3b93f248fd51664576">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename inputActionType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine</a>&lt; inputActionType &gt;::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Останов автомата. Команда передаётся текущему состоянию автомата. </p>
 
 </div>
 </div>

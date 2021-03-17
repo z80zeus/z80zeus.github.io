@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>bulk: Member List</title>
+<title>async: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">bulk
-   &#160;<span id="projectnumber">0.0.50</span>
+   <div id="projectname">async
+   &#160;<span id="projectnumber">0.0.57</span>
    </div>
-   <div id="projectbrief">bulk</div>
+   <div id="projectbrief">async</div>
   </td>
  </tr>
  </tbody>
@@ -75,17 +75,25 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#a91f1a14737842f3612a765c62ca4b701">commandStateMachine</a>()</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#abb92572412bb8e9ff64ed13c8842033e">currentState</a></td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#af9fb5b0244ecf8edf14ec302998db83c">getStaticBlockSize</a>()</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a86266e9016d9427acd25166680abfdf2">inputAction</a>(const std::string &amp;command)</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#a9553fe13a87e486b82235a14128425c8">commandStateMachine</a>(commandStateMachine &amp;&amp;csm) noexcept</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#abb92572412bb8e9ff64ed13c8842033e">currentState</a></td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#aefa7658bfc1031dd3f0c268bbe19dd10">getStaticBlockSize</a>() const</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a86266e9016d9427acd25166680abfdf2">inputAction</a>(const std::string &amp;command)</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1subscriber.html#ae5c53beb5969c571b2314b51f222c0e6">MessageType</a> typedef</td><td class="entry"><a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classz80_1_1publisher.html#a210c9929b39cedb66a13b15bed6507e4">notify</a>(const std::string &amp;data)</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1publisher.html#a7cc5712738a14881def91fd4c5eb3fba">publisher</a>()=default</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1publisher.html#aa0fbcdf2fde848ab9f281d6cafbb05a7">publisher</a>(z80::publisher&lt; std::string &gt; &amp;&amp;p) noexcept</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a5c0c5f55d10eaac9b25f849a09316a01">setState</a>(std::unique_ptr&lt; State &gt; &amp;&amp;newState)</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#a4e650b6e6e42563d5673bb203f5fee93">setStaticBlockSize</a>(std::size_t blockSize)</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a>(Subscriber &amp;subscriber)</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">unsubscribeAll</a>()</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#a52695a8460ee9697b37b8ecc59182fff">unsubscribed</a>() override</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505">update</a>(const std::string &amp;command) override</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a>()=default</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a5c05f64ae664baedea5f86a322f32ad2">stateMachine</a>()=default</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a4de9a532b0438ee4e7070652da9a7ee5">stateMachine</a>(StateMachine &amp;&amp;sm) noexcept</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#a3d52c3e0ff9c8b3b93f248fd51664576">stop</a>()</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1publisher.html#ad5b23cbded2f6e3a61c6d39a5ebef411">subscribe</a>(Subscriber &amp;subscriber)</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1publisher.html#a8cdbed5361b1605abd6b61d6226324b6">unsubscribeAll</a>()</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1subscriber.html#ae367506ca1abefaef9619e4c8459d070">unsubscribed</a>()</td><td class="entry"><a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html#af658250f36bef4186a67722c4e04e505">update</a>(const std::string &amp;command) override</td><td class="entry"><a class="el" href="classz80_1_1commandStateMachine.html">z80::commandStateMachine</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classz80_1_1publisher.html#a2e704591bdc68efe9a506c0ca017e857">~publisher</a>()=default</td><td class="entry"><a class="el" href="classz80_1_1publisher.html">z80::publisher&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classz80_1_1stateMachine.html#abe41bc010c80073bcac21f74feba2237">~stateMachine</a>()</td><td class="entry"><a class="el" href="classz80_1_1stateMachine.html">z80::stateMachine&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classz80_1_1subscriber.html#a5dd7aef485d4e04e65dd6e2b490b7df6">~subscriber</a>()=default</td><td class="entry"><a class="el" href="classz80_1_1subscriber.html">z80::subscriber&lt; std::string &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
